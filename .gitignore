@@ -1,0 +1,15 @@
+.env
+db
+!wordpress/
+
+wordpress/*
+!wordpress/wp-content/
+
+wordpress/wp-content/*
+!wordpress/wp-content/themes
+
+wordpress/wp-content/themes/*
+!wordpress/wp-content/themes/your-theme/
+
+.DS_Store
+.idea
