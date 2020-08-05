@@ -1,5 +1,5 @@
 start:
-	docker-compose up -d --build
+	cp .env.example .env && docker-compose up -d --build
 
 healthcheck:
 	docker-compose run --rm healthcheck
@@ -12,5 +12,5 @@ install: start healthcheck
 configure:
 	docker-compose -f docker-compose.yml -f wp-auto-config.yml run --rm wp-auto-config
 
-autoinstall: cp .env.example .env && start
+autoinstall: start
 	docker-compose -f docker-compose.yml -f wp-auto-config.yml run --rm wp-auto-config
