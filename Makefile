@@ -1,5 +1,5 @@
 start:
-	cp .env.example .env && docker-compose up -d --build
+	docker-compose up -d --build
 
 healthcheck:
 	docker-compose run --rm healthcheck

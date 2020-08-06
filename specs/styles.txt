@@ -1,0 +1,37 @@
+Normal:
+* H1:
+    * font-size: 62px
+    * font-weight: 800
+* H2:
+    * font-size: 18px;
+    * font-weight: 300;
+* H3:
+    * font-size: 14px;
+    * font-weight: bold;
+* H4:
+    * font-size: 18px;
+    * font-weight: bold;
+* Paragraph text (all site):
+    * font-size: 15px;
+    * line-height: 25px;
+    * font-weight: 400;
+* Menu
+    * font-size: 13px;
+    * font-weight: 400;
+* Buttons
+    * font-size: 16px;
+    * font-weight: 700;
+* Blockquote
+    * font-size: 22px;
+    * font-weight: 300;
+
+Sections:
+* Detail:
+    * Same for H3;
+* H2 (Title):
+    * font-size: 34px;
+    * font-weight: 700;
+* Paragraph (Subtitle):
+    * font-size: 16px;
+    * font-weight: 300;
+
