@@ -18,9 +18,10 @@ Seu objetivo é o desenvolvimento de uma Landing Page para apresentação do seu
 - Crie um formulário de contato ao final da page - clichê, mas bem objetivo;
 
 #### Desafio 3
-- Desenvolver 3 CPT plugins para:
+- Desenvolver 2 Options Page para:
   - gerenciar o banner no Header inclusive os textos;
   - gerenciar as redes sociais no topo e no footer;
+- Desenvolver 1 CPT para:
   - gerenciar a seção de "Meus trabalhos" definida no spec;
 
 Ufa... agora, respira e não pira!
