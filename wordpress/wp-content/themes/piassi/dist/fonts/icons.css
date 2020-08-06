@@ -1,0 +1,32 @@
+@font-face {
+	font-family: "icons";
+	src: url("icons.eot?28964e1d7046ee5a45981da747a5594e?#iefix") format("embedded-opentype"),
+url("icons.woff?28964e1d7046ee5a45981da747a5594e") format("woff"),
+url("icons.woff2?28964e1d7046ee5a45981da747a5594e") format("woff2"),
+url("icons.ttf?28964e1d7046ee5a45981da747a5594e") format("truetype"),
+url("icons.svg?28964e1d7046ee5a45981da747a5594e#icons") format("svg");
+}
+
+.icon {
+	line-height: 1;
+}
+
+.icon:before {
+	font-family: icons !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.icon-arrow:before {
+	content: "\f101";
+}
+.icon-facebook:before {
+	content: "\f102";
+}
+.icon-twitter:before {
+	content: "\f103";
+}
+.icon-whatsapp:before {
+	content: "\f104";
+}

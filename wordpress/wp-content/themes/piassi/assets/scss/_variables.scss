@@ -1,0 +1,63 @@
+// Colors
+
+$primary: #1e305e;
+$secondary: #8dbd41;
+$gray-300: #e7e7e7;
+
+$light: $gray-300;
+
+$theme-colors: ();
+$theme-colors: map-merge(
+	(
+		'primary': $primary,
+		'secondary': $secondary,
+		'success': $success,
+		'info': $info,
+		'warning': $warning,
+		'danger': $danger,
+		'dark': $dark,
+		'light': $light
+	),
+	$theme-colors
+);
+
+$body-color: $primary;
+$link-color: theme-color('secondary');
+
+// Spacings
+
+$spacer: 1rem;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+	(
+		0: 0,
+		1: $spacer * 0.25,
+		2: $spacer * 0.5,
+		3: $spacer * 0.75,
+		4: $spacer,
+		5: $spacer * 1.5,
+		6: $spacer * 2,
+		7: $spacer * 2.5,
+		8: $spacer * 3,
+		9: $spacer * 6
+	),
+	$spacers
+);
+
+// Text
+
+$font-family-sans-serif: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+$headings-font-weight: 800;
+$font-size-base: 1.1rem;
+$headings-margin-bottom: 1.5rem;
+
+// Buttons
+$border-radius: 5px;
+$border-radius-lg: 10px;
+$border-radius-sm: 2px;
+
+$btn-border-radius: 2em;
+$btn-border-radius-lg: $btn-border-radius;
+$btn-border-radius-sm: $btn-border-radius;
+$btn-transition: all 0.25s ease-in-out;
