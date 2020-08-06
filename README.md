@@ -12,7 +12,7 @@ Cerimônias a parte, vamos ao que interessa.
 Seu objetivo é o desenvolvimento de uma Landing Page para apresentação do seu trabalho. Bem simples, nada de burocracias!
 
 #### Desafio 1
-- Desenvolver o tema utilizando as specs disponíveis [aqui][https://github.com/HIAE/wp-test/specs];
+- Desenvolver o tema utilizando as specs disponíveis [aqui][https://github.com/HIAE/wp-test/tree/master/specs];
 
 #### Desafio 2
 - Crie um formulário de contato ao final da page - clichê, mas bem objetivo;
@@ -33,7 +33,7 @@ Ufa... agora, respira e não pira!
 
 #### Diferenciais - se vc quiser SUPERAR as expectativas
 - Desenvolva as animações do tema conforme esse [vídeo][https://drive.google.com/file/d/1TpftdAdBVv7-z4wVEGMTc9dt2mE1b8sk/view?usp=sharing];
-- Responsividade. Bora? Veja essas [specs][https://github.com/HIAE/wp-test/specs/mobile] e esse [vídeo][https://drive.google.com/file/d/18MaumaSvPHQqlVjfm9YXwMPpxbMvcU2J/view?usp=sharing];
+- Responsividade. Bora? Veja essas [specs][https://github.com/HIAE/wp-test/tree/master/specs/mobile] e esse [vídeo][https://drive.google.com/file/d/18MaumaSvPHQqlVjfm9YXwMPpxbMvcU2J/view?usp=sharing];
 - Queremos acompanhar a evolução do seu desenvolvimento. Se possível, deixe o histórico de commits.
 
 #### Desenvolvendo
@@ -52,7 +52,7 @@ Quando tiver dúvidas, ou encontrar algum problema, abra uma issue. Estaremos de
 
 Beijos e queijos <3
 
-[https://github.com/HIAE/wp-test/specs]: https://github.com/HIAE/wp-test/specs
+[https://github.com/HIAE/wp-test/tree/master/specs]: https://github.com/HIAE/wp-test/tree/master/specs
 [https://drive.google.com/file/d/1TpftdAdBVv7-z4wVEGMTc9dt2mE1b8sk/view?usp=sharing]: https://drive.google.com/file/d/1TpftdAdBVv7-z4wVEGMTc9dt2mE1b8sk/view?usp=sharing
 [https://drive.google.com/file/d/18MaumaSvPHQqlVjfm9YXwMPpxbMvcU2J/view?usp=sharing]: https://drive.google.com/file/d/18MaumaSvPHQqlVjfm9YXwMPpxbMvcU2J/view?usp=sharing
-[https://github.com/HIAE/wp-test/specs/mobile]: https://github.com/HIAE/wp-test/specs/mobile
+[https://github.com/HIAE/wp-test/tree/master/specs/mobile]: https://github.com/HIAE/wp-test/tree/master/specs/mobile
