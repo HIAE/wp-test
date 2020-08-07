@@ -5,7 +5,7 @@
  * @package piassi
  */
 
-namespace App\Pages;
+namespace Theme\Pages;
 
 use SolidPress\Core\Page;
 

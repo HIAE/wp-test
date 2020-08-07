@@ -1,112 +1,62 @@
 <?php
 
-namespace App\FieldsGroups;
+namespace Theme\FieldsGroups;
 
-use App\Helpers\Icons;
+use Theme\Helpers\Icons;
 use SolidPress\Core\FieldGroup;
 use SolidPress\Core\Page;
 use SolidPress\Fields;
 
-class Home extends FieldGroup
-{
-	public function __construct()
-	{
-		$this->set_fields([
-			// Hero
-			'hero_tab' => new Fields\Tab('Hero'),
-			'hero' => new Fields\Group('', [
-				'sub_fields' => [
-					'buttons' => new Fields\Repeater('Botões Principais', [
-						'sub_fields' => [
-							'link' => new Fields\Link('Link'),
-							'icon' => Icons::select_field()
-						]
-					]),
+/**
+ * Register fields to FrontPage
+ */
+class FrontPage extends FieldGroup {
 
-					'buttons_bar' => new Fields\Repeater('Botões Inferiores', [
-						'sub_fields' => [
-							'link' => new Fields\Link('Link'),
-							'icon' => Icons::select_field()
-						]
-					]),
-				]
-			]),
+	/**
+	 * Set fields and group args
+	 */
+	public function __construct() {
+        $this->set_fields(
+            array(
+				// Hero
+				'hero_tab' => new Fields\Tab( 'Hero' ),
+				'hero'     => new Fields\Group(
+                    '',
+                    array(
+						'sub_fields' => array(
+							'buttons'     => new Fields\Repeater(
+								'Botões Principais',
+								array(
+									'sub_fields' => array(
+										'link' => new Fields\Link( 'Link' ),
+										'icon' => Icons::select_field(),
+									),
+								)
+							),
 
-			// Quem Somos
-			'who_we_are_tab' => new Fields\Tab('Quem somos'),
-			'who_we_are' => new Fields\Group('', [
-				'sub_fields' => [
-					'title' => new Fields\Text('Título'),
-					'image' => new Fields\Image('Imagem', [
-						'wrapper' => ['width' => 30]
-					]),
-					'description' => new Fields\Editor('Descrição', [
-						'wrapper' => ['width' => 70]
-					]),
-				]
-			]),
+							'buttons_bar' => new Fields\Repeater(
+								'Botões Inferiores',
+								array(
+									'sub_fields' => array(
+										'link' => new Fields\Link( 'Link' ),
+										'icon' => Icons::select_field(),
+									),
+								)
+							),
+						),
+                    )
+				),
+            )
+		);
 
-			// CTA App
-			'app_cta_tab' => new Fields\Tab('CTA App'),
-			'app_cta' => new Fields\Group('', [
-				'sub_fields' => [
-					'title' => new Fields\Text('Título'),
-					'description' => new Fields\Editor('Descrição'),
-					'buttons' => new Fields\Repeater('Botões', [
-						'sub_fields' => [
-							'link' => new Fields\Link('Link'),
-							'icon' => new Fields\Image('Ícone')
-						]
-					]),
-					'background' => new Fields\Image('Fundo')
-				]
-			]),
-
-			// Partners
-			'partners_tab' => new Fields\Tab('Parceiros'),
-			'partners' => new Fields\Group('', [
-				'sub_fields' => [
-					'title' => new Fields\Text('Título'),
-					'items' => new Fields\Repeater('Carousel', [
-						'sub_fields' => [
-							'link' => new Fields\URL('Link'),
-							'logo' => new Fields\Image('Logo')
-						]
-					]),
-				]
-			]),
-
-			// Testimonials
-			'testimonials_tab' => new Fields\Tab('Depoimento'),
-			'testimonials' => new Fields\Group('', [
-				'sub_fields' => [
-					'title' => new Fields\Text('Título'),
-					'items' => new Fields\Repeater('Carousel', [
-						'sub_fields' => [
-							'text' => new Fields\Textarea('Texto'),
-							'name' => new Fields\Text('Nome')
-						]
-					]),
-				]
-			]),
-
-			// Posts Cta
-			'posts_cta_tab' => new Fields\Tab('CTA Posts'),
-			'posts_cta' => new Fields\Group('', [
-				'sub_fields' => [
-					'title' => new Fields\Text('Título'),
-				]
-			]),
-		]);
-
-		$this->args = [
-			'key' => 'home-fields',
-			'title' => 'Home',
-			'location' => [
-				[
-					Page::type_is_equal_to('front_page'),
-				],
-			]
-		];
+		$this->args = array(
+			'key'      => 'home-fields',
+			'title'    => 'Home',
+			'location' => array(
+				array(
+					Page::type_is_equal_to( 'front_page' ),
+				),
+			),
+		);
 	}
 }

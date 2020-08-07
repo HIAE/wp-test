@@ -2,12 +2,6 @@
 	background-color: #fff;
 	transition: all 0.25s ease-in-out;
 
-	@include media-breakpoint-up(lg) {
-		> .container {
-			max-width: 1600px;
-		}
-	}
-
 	.site-branding {
 		max-width: 175px;
 		z-index: 70;

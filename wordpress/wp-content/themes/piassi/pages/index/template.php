@@ -2,13 +2,14 @@
 /**
  * Default page template
  *
- * @see App\Components\DefaultPage
+ * @see Theme\Components\DefaultPage
  *
  * @package piassi
  */
+
 ?>
 
-<div id="home" class="page">
+<div id="index" class="page">
     <div class="container">
         <div class="row">
             <?php the_content(); ?>

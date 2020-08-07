@@ -1,19 +1,23 @@
 <?php
 
-namespace App\Options;
+namespace Theme\Options;
 
 use SolidPress\Core\OptionsPage;
 
-class Theme extends OptionsPage
-{
-	public function __construct()
-	{
-		$this->args = [
-			'page_title' 	=> 'Opções do tema',
-			'menu_title'	=> 'Opções',
-			'menu_slug' 	=> 'theme-options',
-			'capability'	=> 'edit_posts',
-			'redirect'		=> false
-		];
+/**
+ * Register OptionsPage
+ */
+class Theme extends OptionsPage {
+	/**
+	 * Set options page args
+	 */
+	public function __construct() {
+		$this->args = array(
+			'page_title' => 'Opções do tema',
+			'menu_title' => 'Opções',
+			'menu_slug'  => 'theme-options',
+			'capability' => 'edit_posts',
+			'redirect'   => false,
+		);
 	}
 }

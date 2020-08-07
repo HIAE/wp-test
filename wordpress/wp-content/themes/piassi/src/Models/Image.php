@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace Theme\Models;
 
 /**
  * Image Model

@@ -1,21 +1,20 @@
 <?php
 
-namespace App\Hooks;
+namespace Theme\Hooks;
 
 use SolidPress\Core\Hook;
-use App\Models\Image;
+use Theme\Models\Image;
 
 /**
  * ACF specific hooks
  */
-class ACF extends Hook
-{
+class ACF extends Hook {
+
 	/**
 	 * Add actions
 	 */
-	public function __construct()
-	{
-		$this->add_action('acf/format_value/type=image', 'image_format_value', 20, 3);
+	public function __construct() {
+        $this->add_action( 'acf/format_value/type=image', 'image_format_value', 20, 3 );
 	}
 
 	/**
@@ -26,8 +25,7 @@ class ACF extends Hook
 	 * @param [type] $field - field.
 	 * @return Image|array
 	 */
-	public function image_format_value($value, $post_id, $field)
-	{
-		return is_array($value) ? Image::fromACF($value) : $value;
+	public function image_format_value( $value, $post_id, $field ) {
+		return is_array( $value ) ? Image::from_acf( $value ) : $value;
 	}
 }

@@ -1,6 +1,6 @@
 <?php
 
-use App\Components;
+use Theme\Components;
 
 echo new Components\Footer();
 

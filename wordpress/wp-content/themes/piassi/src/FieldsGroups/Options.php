@@ -1,54 +1,61 @@
 <?php
 
-namespace App\FieldsGroups;
+namespace Theme\FieldsGroups;
 
-use App\Helpers\Icons;
 use SolidPress\Core\FieldGroup;
 use SolidPress\Core\OptionsPage;
 use SolidPress\Fields;
 
-class Options extends FieldGroup
-{
-	public function __construct()
-	{
-		$this->set_fields([
-			// Footer
-			'footer_tab' => new Fields\Tab('Footer'),
-			'footer' => new Fields\Group('', [
-				'sub_fields' => [
-					'logo' => new Fields\Image('Logo'),
-					'copyright' => new Fields\Textarea('Copyright'),
-					'certifications' => new Fields\Repeater('Certificações', [
-						'sub_fields' => [
-							'image' => new Fields\Image('Imagem')
-						]
-					]),
-					'buttons' => new Fields\Repeater('Botões', [
-						'sub_fields' => [
-							'link' => new Fields\Link('Link')
-						]
-					])
-				]
-			]),
+/**
+ * Register fields to Options
+ */
+class Options extends FieldGroup {
 
-			// Social networks
-			'social_networks_tab' => new Fields\Tab('Redes sociais'),
-			'social_networks' => new Fields\Repeater('Redes sociais', [
-				'sub_fields' => [
-					'icon' => Icons::select_field(),
-					'link' => new Fields\Text('Link'),
-				]
-			]),
-		]);
+	/**
+	 * Set fields and group args
+	 */
+	public function __construct() {
+        $this->set_fields(
+            array(
+				// Footer
+				'footer_tab' => new Fields\Tab( 'Footer' ),
+				'footer'     => new Fields\Group(
+                    '',
+                    array(
+						'sub_fields' => array(
+							'logo'           => new Fields\Image( 'Logo' ),
+							'copyright'      => new Fields\Textarea( 'Copyright' ),
+							'certifications' => new Fields\Repeater(
+								'Certificações',
+								array(
+									'sub_fields' => array(
+										'image' => new Fields\Image( 'Imagem' ),
+									),
+								)
+							),
+							'buttons'        => new Fields\Repeater(
+								'Botões',
+								array(
+									'sub_fields' => array(
+										'link' => new Fields\Link( 'Link' ),
+									),
+								)
+                            ),
+						),
+                    )
+				),
 
-		$this->args = [
-			'key' => 'theme-options',
-			'title' => 'Opções do Tema',
-			'location' => [
-				[
-					OptionsPage::is_equal_to('theme-options'),
-				],
-			]
-		];
+            )
+		);
+
+		$this->args = array(
+			'key'      => 'theme-options',
+			'title'    => 'Opções do Tema',
+			'location' => array(
+				array(
+					OptionsPage::is_equal_to( 'theme-options' ),
+				),
+			),
+		);
 	}
 }

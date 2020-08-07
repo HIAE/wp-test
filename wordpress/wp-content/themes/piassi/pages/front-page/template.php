@@ -2,13 +2,13 @@
 /**
  * FrontPage template file
  *
- * @see App\Components\Home
+ * @see Theme\Components\FrontPage
  *
  * @package piassi
  */
 
-use App\Components;
+use Theme\Components;
 ?>
 
-<div id="home" class="page">
+<div id="front-page" class="page">
 </div>

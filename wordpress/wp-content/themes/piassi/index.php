@@ -2,13 +2,13 @@
 /**
  * Default page template
  *
- * @see App\Pages\Index
+ * @see Theme\Pages\Index
  *
  * @package piassi
  */
 
 get_header();
 
-echo new App\Pages\Index();
+echo new Theme\Pages\Index();
 
 get_footer();

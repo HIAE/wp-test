@@ -1,10 +1,10 @@
 // Colors
 
-$primary: #1e305e;
-$secondary: #8dbd41;
-$gray-300: #e7e7e7;
+$primary: #d2b356;
+$secondary: #111111;
 
-$light: $gray-300;
+$light: #c7c7c7;
+$dark: #111111;
 
 $theme-colors: ();
 $theme-colors: map-merge(
@@ -26,7 +26,7 @@ $link-color: theme-color('secondary');
 
 // Spacings
 
-$spacer: 1rem;
+$spacer: 20px;
 $spacers: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $spacers: map-merge(
@@ -40,24 +40,20 @@ $spacers: map-merge(
 		6: $spacer * 2,
 		7: $spacer * 2.5,
 		8: $spacer * 3,
-		9: $spacer * 6
+		9: $spacer * 6,
+		10: $spacer * 7
 	),
 	$spacers
 );
 
 // Text
 
-$font-family-sans-serif: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+$font-family-sans-serif: 'Open Sans', sans-serif;
 $headings-font-weight: 800;
-$font-size-base: 1.1rem;
 $headings-margin-bottom: 1.5rem;
 
 // Buttons
-$border-radius: 5px;
-$border-radius-lg: 10px;
-$border-radius-sm: 2px;
-
-$btn-border-radius: 2em;
-$btn-border-radius-lg: $btn-border-radius;
-$btn-border-radius-sm: $btn-border-radius;
+$btn-border-radius: 0;
+$btn-border-radius-lg: 0;
+$btn-border-radius-sm: 0;
 $btn-transition: all 0.25s ease-in-out;

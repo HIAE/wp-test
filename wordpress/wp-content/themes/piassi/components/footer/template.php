@@ -2,12 +2,12 @@
 /**
  * Footer template
  *
- * @see App\Components\Footer
+ * @see Theme\Components\Footer
  *
  * @package piassi
  */
 
-use App\Components;
+use Theme\Components;
 ?>
 
 <footer class="_footer">

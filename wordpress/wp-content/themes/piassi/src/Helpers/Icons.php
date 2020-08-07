@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers;
+namespace Theme\Helpers;
 
 use SolidPress\Core\Field;
 use SolidPress\Fields;
@@ -8,8 +8,8 @@ use SolidPress\Fields;
 /**
  * Helper class to handle icons
  */
-class Icons
-{
+class Icons {
+
 	const LIST = array(
 		'arrow',
 		'beneficiario',
@@ -23,7 +23,7 @@ class Icons
 		'Search',
 		'telefone',
 		'whatsapp',
-		'whatsapp-logo'
+		'whatsapp-logo',
 	);
 
 	/**
@@ -32,12 +32,11 @@ class Icons
 	 * @param string $label - Field label on admin.
 	 * @return Field - Fields\Select instance with icons as options.
 	 */
-	public static function select_field(string $label = 'Ícone'): Field
-	{
+	public static function select_field( string $label = 'Ícone' ): Field {
 		return new Fields\Select(
 			$label,
 			array(
-				'choices' => array_combine(self::LIST, self::LIST),
+				'choices' => array_combine( self::LIST, self::LIST ),
 			)
 		);
 	}

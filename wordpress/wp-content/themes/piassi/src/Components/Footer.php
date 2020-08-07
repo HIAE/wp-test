@@ -5,7 +5,7 @@
  * @package piassi
  */
 
-namespace App\Components;
+namespace Theme\Components;
 
 use SolidPress\Core\Component;
 
@@ -21,21 +21,11 @@ class Footer extends Component {
 	public $template = 'components/footer/template';
 
 	/**
-     * Component default props
-     *
-     * @var string
-     */
-	public $props = array(
-		'element' => 'h1',
-		'content' => '',
-	);
-
-	/**
 	 * Values returned by get_props will be avaliable at the template as variables
 	 *
 	 * @return array
 	 */
 	public function get_props(): array {
-		return (array) get_field( 'footer', 'option' );
+		return array();
 	}
 }

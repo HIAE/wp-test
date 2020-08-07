@@ -5,7 +5,7 @@
  * @package piassi
  */
 
-namespace App\Components;
+namespace Theme\Components;
 
 use SolidPress\Core\Component;
 

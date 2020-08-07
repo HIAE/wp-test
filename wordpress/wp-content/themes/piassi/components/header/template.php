@@ -2,16 +2,16 @@
 /**
  * Header template file
  *
- * @see App\Components\Header
+ * @see Theme\Components\Header
  *
- * @package _solidpress
+ * @package piassi
  */
 
 ?>
 
 <header
     id="masthead"
-    class="_header py-3 sticky-top animate__animated animate__fadeInDown bg-<?php echo $background; ?>">
+    class="_header pt-4 sticky-top animate__animated animate__fadeInDown">
     <div class="container">
         <div class="row align-items-end">
             <div class="col-12 col-lg-3 align-items-center justify-content-between d-flex">
