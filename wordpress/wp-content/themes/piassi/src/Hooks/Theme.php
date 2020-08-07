@@ -65,18 +65,6 @@ class Theme extends Hook {
 				'header-text' => array( 'site-title', 'site-description' ),
 			)
         );
-
-		register_sidebar(
-			array(
-				'name'          => __( 'Sidebar', 'piassi' ),
-				'id'            => 'blog-sidebar',
-				'description'   => __( 'Add widgets here to appear in your sidebar.', 'piassi' ),
-				'before_widget' => '<section id="%1$s" class="widget %2$s">',
-				'after_widget'  => '</section>',
-				'before_title'  => '<h4 class="h5 mb-3 widget-title font-weight-normal">',
-				'after_title'   => '</h4>',
-			)
-		);
 	}
 
 	/**

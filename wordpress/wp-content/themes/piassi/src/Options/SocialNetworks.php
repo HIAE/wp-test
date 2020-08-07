@@ -5,17 +5,17 @@ namespace Theme\Options;
 use SolidPress\Core\OptionsPage;
 
 /**
- * Register OptionsPage
+ * Register SocialNetworks options page
  */
-class Theme extends OptionsPage {
+class SocialNetworks extends OptionsPage {
 	/**
 	 * Set options page args
 	 */
 	public function __construct() {
 		$this->args = array(
-			'page_title' => 'Opções do tema',
-			'menu_title' => 'Opções',
-			'menu_slug'  => 'theme-options',
+			'page_title' => __( 'Social Networks', 'piassi' ),
+			'menu_title' => __( 'Social Networks', 'piassi' ),
+			'menu_slug'  => 'social-networks',
 			'capability' => 'edit_posts',
 			'redirect'   => false,
 		);

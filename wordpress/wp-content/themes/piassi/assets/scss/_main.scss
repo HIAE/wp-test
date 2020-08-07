@@ -20,3 +20,7 @@ img {
 .flex-center {
 	@extend .d-flex, .align-items-center, .justify-content-center;
 }
+
+body {
+	background-color: #ccc;
+}

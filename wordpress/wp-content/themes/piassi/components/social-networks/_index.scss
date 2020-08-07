@@ -1,0 +1,14 @@
+._social-networks {
+	a {
+		color: #a0a0a0;
+		transition: color 0.2s ease-in-out;
+		font-size: 0.9rem;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $primary;
+			text-decoration: none;
+		}
+	}
+}

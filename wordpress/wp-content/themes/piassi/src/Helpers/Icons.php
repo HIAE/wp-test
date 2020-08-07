@@ -11,19 +11,11 @@ use SolidPress\Fields;
 class Icons {
 
 	const LIST = array(
-		'arrow',
-		'beneficiario',
-		'coracao',
-		'corretor',
-		'email',
 		'facebook',
+		'g-plus',
+		'twitter',
 		'instagram',
-		'ok',
-		'papel',
-		'Search',
-		'telefone',
-		'whatsapp',
-		'whatsapp-logo',
+		'behance',
 	);
 
 	/**

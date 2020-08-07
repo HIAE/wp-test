@@ -26,7 +26,6 @@ class Header extends Component {
      * @var string
      */
 	public $props = array(
-		'element' => 'h1',
-		'content' => '',
+		'class' => '',
 	);
 }
