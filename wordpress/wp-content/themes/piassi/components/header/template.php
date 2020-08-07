@@ -14,7 +14,7 @@
         id="masthead"
         class="_header sticky-top bg-white shadow-sm animate__animated animate__fadeInDown">
         <div class="container">
-            <div class="row justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center">
                 <div>
                     <div class="site-branding lead">
                         <?php if ( is_front_page() && is_home() ) : ?>
