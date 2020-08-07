@@ -10,8 +10,17 @@
 use SolidPress\Core\Theme;
 use SolidPress\Core\WPTemplate;
 
+
 // Composer autoload
 require get_template_directory() . '/vendor/autoload.php';
+
+
+// Define path and URL to the ACF plugin.
+define( 'MY_ACF_PATH', get_template_directory() . '/includes/acf/' );
+define( 'MY_ACF_URL', get_stylesheet_directory_uri() . '/includes/acf/' );
+
+// Include the ACF plugin.
+require_once MY_ACF_PATH . 'acf.php';
 
 $registrable_namespaces = array();
 
