@@ -10,10 +10,10 @@
 use SolidPress\Core\Theme;
 use SolidPress\Core\WPTemplate;
 
+add_filter( 'use_block_editor_for_post', '__return_false' );
 
 // Composer autoload
 require get_template_directory() . '/vendor/autoload.php';
-
 
 // Define path and URL to the ACF plugin.
 define( 'MY_ACF_PATH', get_template_directory() . '/includes/acf/' );

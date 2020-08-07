@@ -7,10 +7,14 @@
 
 // Common components
 @import '../../components/header';
+@import '../../components/social-networks/';
+@import '../../components/link-button/';
 @import '../../components/footer';
 
 // Additional imports
 @import '../../node_modules/animate.css/animate.min.css';
+
+$font-size-sm: 0.85rem;
 
 img {
 	max-width: 100%;
@@ -23,4 +27,35 @@ img {
 
 body {
 	background-color: #ccc;
+	font-family: $font-family-sans-serif;
+}
+
+.line-decoration {
+	content: '';
+	display: block;
+	width: 25px;
+	height: 5px;
+	background-color: $primary;
+	position: absolute;
+	left: 0;
+}
+
+.bottom-line-decoration {
+	position: relative;
+
+	&:after {
+		@extend .line-decoration;
+		bottom: 0;
+		margin-bottom: -2.5px;
+	}
+}
+
+.top-line-decoration {
+	position: relative;
+
+	&:before {
+		@extend .line-decoration;
+		top: 0;
+		margin-top: -2.5px;
+	}
 }

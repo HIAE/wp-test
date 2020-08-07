@@ -24,7 +24,7 @@ class ImagesSizes extends Hook {
 		// add_image_size( 'SIZE_768_768', 768, 768, true );
 
 		// HORIZONTAL
-		add_image_size( 'SIZE_890_350', 890, 350, true );
+		add_image_size( 'SIZE_680_380', 680, 380, true );
 
 		// VERTICAL
 		// add_image_size( 'SIZE_360_768', 360, 768, true );

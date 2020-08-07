@@ -13,3 +13,4 @@ use Theme\Components;
 <footer class="_footer">
 
 </footer>
+</div>

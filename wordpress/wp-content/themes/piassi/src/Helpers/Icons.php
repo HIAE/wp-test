@@ -16,6 +16,11 @@ class Icons {
 		'twitter',
 		'instagram',
 		'behance',
+		'arrow',
+		'html5',
+		'phone',
+		'rocket',
+		'thunder',
 	);
 
 	/**
