@@ -2,4 +2,13 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 0px 0px;
+
+	a {
+		opacity: 1;
+		transition: opacity 0.2s ease-in-out;
+
+		&:hover {
+			opacity: 0.5;
+		}
+	}
 }

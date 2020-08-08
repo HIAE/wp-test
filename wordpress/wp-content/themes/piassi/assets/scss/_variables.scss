@@ -5,6 +5,7 @@ $secondary: #111111;
 
 $light: #c7c7c7;
 $dark: #111111;
+$gray: #f5f5f5;
 
 $theme-colors: ();
 $theme-colors: map-merge(
@@ -18,7 +19,8 @@ $theme-colors: map-merge(
 		'dark': $dark,
 		'light': $light,
 		'white': $white,
-		'black': $black
+		'black': $black,
+		'gray': $gray
 	),
 	$theme-colors
 );
@@ -30,7 +32,7 @@ $link-color: theme-color('secondary');
 
 $spacer: 20px;
 $spacers: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
+
 $spacers: map-merge(
 	(
 		0: 0,
@@ -48,8 +50,10 @@ $spacers: map-merge(
 	$spacers
 );
 
-// Text
+// Box Shadow
+$box-shadow-sm: 0 0.125rem 0.1rem rgba(0, 0, 0, 0.045);
 
+// Text
 $font-family-sans-serif: 'Open Sans', sans-serif;
 $headings-font-weight: 800;
 $headings-margin-bottom: 1.5rem;
@@ -69,5 +73,8 @@ $btn-border-radius-sm: 0;
 $btn-transition: all 0.25s ease-in-out;
 $btn-border-width: 3px;
 
-// Box Shadow
-$box-shadow-sm: 0 0.125rem 0.1rem rgba(0, 0, 0, 0.045);
+// Form
+$input-focus-border-color: $primary;
+$input-focus-box-shadow: 0 0 0 0.2rem lighten($primary, 30);
+$input-border-radius: 0px;
+$form-group-margin-bottom: $spacer;

@@ -9,23 +9,24 @@
 
 use Theme\Components;
 ?>
-<section class="_about py-10 <?php echo $class; ?>">
+<section class="_about mt-10 <?php echo $class; ?>" id="sobre">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-4">
                 <?php
                 echo new Components\SectionHeader(
                     array(
-						'title'       => $title,
-						'subtitle'    => $subtitle,
-						'description' => $description,
+						'description_class' => 'text-muted',
+						'title'             => $title,
+						'subtitle'          => $subtitle,
+						'description'       => $description,
                     )
                 )
 				?>
             </div>
 
             <?php if ( $cards ) : ?>
-            <div class="col-12 col-lg-8 pl-lg-7">
+            <div class="col-12 col-lg-8 pl-lg-7 mb-n7">
                 <div class="row">
                     <?php foreach ( $cards as $card ) : ?>
                     <div class="card col-12 col-lg-6 mb-7">

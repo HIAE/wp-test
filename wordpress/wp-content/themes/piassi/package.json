@@ -74,10 +74,11 @@
 		"bootstrap": "^4.5.0",
 		"jquery": "^3.5.1",
 		"jquery-mask-plugin": "^1.14.16",
+		"lightbox2": "^2.11.3",
 		"lozad": "^1.15.0",
 		"md5": "^2.2.1",
 		"smoothscroll-polyfill": "^0.4.4",
-		"swiper": "^6.0.4",
+		"swiper": "^6.1.1",
 		"webfonts-loader": "^5.2.2"
 	}
 }

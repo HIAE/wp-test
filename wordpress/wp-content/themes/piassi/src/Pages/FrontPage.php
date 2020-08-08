@@ -11,6 +11,7 @@ use SolidPress\Core\FieldGroup;
 use SolidPress\Core\Page;
 use Theme\FieldsGroups\FrontPage as FrontPageFieldsGroups;
 use Theme\Models\Image;
+use Theme\Components;
 
 /**
  * Handle Home template and props
@@ -33,6 +34,13 @@ class FrontPage extends Page {
 
 		$home_fields['hero']['background_image'] = Image::from_post_thumbnail();
 		$home_fields['hero']['description']      = apply_filters( 'the_content', get_the_content( null, false, get_the_ID() ) );
+
+		$home_fields['services']['testimonials'] = array_map(
+            function ( $item ) {
+				return new Components\TestimonialCarousel( $item );
+			},
+            $home_fields['services']['testimonials']
+        );
 
 		return $home_fields;
 	}

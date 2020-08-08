@@ -17,5 +17,13 @@ use Theme\Components;
 		echo new Components\About( $about );
 
 		echo new Components\Gallery( array( 'gallery' => $gallery ) );
+
+		echo new Components\Services( $services );
+
+		echo new Components\Testimonials( $testimonials );
+
+		echo new Components\Clients( $clients );
+
+		echo new Components\Contact( $contact );
 	?>
 </div>

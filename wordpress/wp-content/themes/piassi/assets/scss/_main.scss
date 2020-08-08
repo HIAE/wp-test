@@ -8,13 +8,15 @@
 // Common components
 @import '../../components/header';
 @import '../../components/social-networks/';
-@import '../../components/link-button/';
-@import '../../components/footer';
 
 // Additional imports
 @import '../../node_modules/animate.css/animate.min.css';
 
 $font-size-sm: 0.85rem;
+
+.text-sm {
+	font-size: $font-size-sm;
+}
 
 img {
 	max-width: 100%;
@@ -58,4 +60,24 @@ body {
 		top: 0;
 		margin-top: -2.5px;
 	}
+}
+
+.centered-line-decoration {
+	&:before,
+	&:after {
+		left: 50%;
+		margin-left: -12.5px;
+	}
+}
+
+.form-group {
+	> label {
+		color: darken($color: $primary, $amount: 20);
+	}
+}
+
+.btn {
+	font-weight: 600;
+	font-size: $font-size-sm;
+	text-transform: uppercase;
 }

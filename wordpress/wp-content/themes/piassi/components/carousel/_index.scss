@@ -1,0 +1,53 @@
+@import '../../node_modules/swiper/swiper.scss';
+
+._carousel {
+	position: relative;
+
+	.swiper-pagination {
+		.swiper-pagination-bullet {
+			width: 14px;
+			height: 14px;
+			border: solid 2px $secondary;
+			border-radius: 50%;
+			box-sizing: border-box;
+			margin: 0 0.25rem;
+
+			&.swiper-pagination-bullet-active {
+				background-color: $secondary;
+				border: none;
+			}
+		}
+	}
+
+	.swiper-button {
+		width: 58px;
+		height: 58px;
+		position: absolute;
+		z-index: 50;
+		top: 50%;
+		margin-top: -24px;
+		border-radius: 50%;
+		text-decoration: none;
+		color: $secondary;
+		cursor: pointer;
+		transition: all 0.25s ease-in-out;
+		font-size: 2rem;
+
+		&:hover {
+			background-color: $secondary;
+			color: #fff;
+		}
+	}
+
+	.swiper-button-prev {
+		left: -29px;
+
+		i {
+			transform: rotate(180deg);
+		}
+	}
+
+	.swiper-button-next {
+		right: -29px;
+	}
+}

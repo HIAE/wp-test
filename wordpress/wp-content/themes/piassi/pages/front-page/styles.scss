@@ -1,13 +1,13 @@
 @import '../../assets/scss/main';
 
+// Packages
+@import '../../assets/scss/lightbox';
+
 // Components
 @import '../../components/hero/';
 @import '../../components/section-header/';
 @import '../../components/about/';
 @import '../../components/gallery/';
-// @import '../../components/app-cta/';
-// @import '../../components/partners/';
-// @import '../../components/carousel/';
-// @import '../../components/testimonials/';
-// @import '../../components/posts-cta/';
-// @import '../../components/post-card/';
+@import '../../components/carousel/';
+@import '../../components/clients/';
+@import '../../components/contact/';

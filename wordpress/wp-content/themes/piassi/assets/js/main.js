@@ -7,22 +7,19 @@ import $ from 'jquery';
 $(window).ready(function() {
 	$('a.scroll-link, .scroll-link > a').on('click', function(e) {
 		e.preventDefault();
+		const headerRef = $('._header');
 
 		const url = $(this).attr('href');
 		const [, hash] = url.split('#');
 
+		console.log(parseInt(headerRef.outerHeight()) * -1);
+
 		if (hash) {
-			scrollWindowToElement(`#${hash}`, { offset: -92 });
+			scrollWindowToElement(`#${hash}`, { offset: parseInt(headerRef.outerHeight()) * -1 });
 		}
 
-		if (
-			$('._header')
-				.find('.toggle-menu')
-				.hasClass('active')
-		) {
-			$('._header')
-				.find('.toggle-menu')
-				.click();
+		if (headerRef.find('.toggle-menu').hasClass('active')) {
+			headerRef.find('.toggle-menu').click();
 		}
 	});
 });
