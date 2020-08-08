@@ -1,0 +1,78 @@
+h1{
+	font-size: 62px;
+    font-weight: 800;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: 300;
+}
+h3{
+    font-size: 14px;
+    font-weight: bold;
+}
+h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+p{
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;;
+}
+nav{
+	a{
+        font-size: 13px;
+        font-weight: 400;
+    }
+}
+.button{
+    font-size: 16px;
+    font-weight: 700;
+}
+blockquote{
+    font-size: 22px;
+    font-weight: 300;
+}
+iframe{
+    width: 100%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    border:20px solid #ccc;
+}
+.container{
+    width:$break-lg;
+    margin:0 auto;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:3px solid $color1;
+    color:$color1;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 165px;
+    height: 45px;
+}
+.line{
+    &:before, &:after{
+        width:30px;
+        height:5px;
+        display: block;
+        background:$color2;
+    }
+    &.line-top{
+        &:before{
+            content:"";
+            margin-bottom:20px;
+        }
+    }
+    &.line-bottom{
+        &:after{
+            content:"";
+            margin-top:20px;
+        }
+    }
+}

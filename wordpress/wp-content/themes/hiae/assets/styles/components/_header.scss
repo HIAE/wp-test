@@ -1,0 +1,30 @@
+.header{
+	border-bottom:1px solid #eff0ef;
+	.container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 65px;
+		.logo{
+			color:$color1;
+			text-transform: uppercase;
+			text-decoration: underline;
+			font-size: 25px;
+		}
+		nav{
+			ul{
+				display: flex;
+				a{
+					text-transform:uppercase;
+					color:$color1;
+					padding:25px 10px 20px 10px;
+					border-bottom:2px solid transparent;
+					&:hover{
+						color:$color2;
+						border-color:$color2;
+					}
+				}
+			}
+		}
+	}
+}

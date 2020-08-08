@@ -1,0 +1,11 @@
+.social{
+	a{
+		color:$color3;
+		&:hover{
+			color:$color2;
+		}
+		& + a{
+			margin-left: 15px;
+		}
+	}
+}

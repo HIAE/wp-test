@@ -14,7 +14,7 @@
 
 		<div class="container">
 			
-			<h1 class="logo"><a href="#" title="<?php bloginfo("name"); ?>"><?php bloginfo("name"); ?></a></h1>
+			<h1 class="logo"><?php bloginfo("name"); ?></h1>
 
 			<?php wp_nav_menu(array('before' => '', 'after' => '', 'menu' => 'Principal', 'container' => 'false', 'items_wrap' => '<nav><ul class="nav menu">%3$s</ul></nav>')); ?>
 
