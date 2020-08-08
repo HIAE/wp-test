@@ -34,13 +34,16 @@ class FrontPage extends Page {
 
 		$home_fields['hero']['background_image'] = Image::from_post_thumbnail();
 		$home_fields['hero']['description']      = apply_filters( 'the_content', get_the_content( null, false, get_the_ID() ) );
+		$home_fields['hero']['button']['class']  = 'scroll-link';
 
 		$home_fields['services']['testimonials'] = array_map(
             function ( $item ) {
 				return new Components\TestimonialCarousel( $item );
 			},
             $home_fields['services']['testimonials']
-        );
+		);
+
+		$home_fields['services']['button']['class'] = 'scroll-link';
 
 		return $home_fields;
 	}
