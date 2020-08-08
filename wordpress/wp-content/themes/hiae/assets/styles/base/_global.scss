@@ -55,6 +55,10 @@ body{
     font-weight: 700;
     width: 165px;
     height: 45px;
+    &:hover{
+        border-color:$color2;
+        color:$color2;
+    }
 }
 .line{
     &:before, &:after{
