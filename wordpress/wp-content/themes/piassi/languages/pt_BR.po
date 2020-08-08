@@ -8,12 +8,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4\n"
+"Last-Translator: \n"
+"Language: pt_BR\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../components/contact-form/template.php:19, ../src/FieldsGroups/FrontPage.php:185, ../src/Hooks/ContactForm.php:44
+#: ../components/contact-form/template.php:19,
+#: ../src/FieldsGroups/FrontPage.php:185, ../src/Hooks/ContactForm.php:44
 msgid "Name"
 msgstr "Nome"
 
@@ -27,112 +34,125 @@ msgstr "E-mail"
 
 #: ../components/contact-form/template.php:37
 msgid "Type in your email"
-msgstr "Digite seu email"
+msgstr "Digite seu e-mail"
 
 #: ../components/contact-form/template.php:43
 msgid "Subject"
 msgstr "Assunto"
 
-#: ../components/contact-form/template.php:49, ../src/FieldsGroups/FrontPage.php:208
+#: ../components/contact-form/template.php:49,
+#: ../src/FieldsGroups/FrontPage.php:208
 msgid "Mail subject"
-msgstr ""
+msgstr "Assunto"
 
 #: ../components/contact-form/template.php:55, ../src/Hooks/ContactForm.php:46
 msgid "Message"
-msgstr ""
+msgstr "Mensagem"
 
 #: ../components/contact-form/template.php:61
 msgid "Type in your message"
-msgstr ""
+msgstr "Digite sua mensagem"
 
 #: ../components/contact-form/template.php:69
 msgid "Send message"
-msgstr ""
+msgstr "Enviar mensagem"
 
 #: ../src/FieldsGroups/FrontPage.php:23, ../src/FieldsGroups/FrontPage.php:70
 msgid "Hero"
-msgstr ""
+msgstr "Hero"
 
 #: ../src/FieldsGroups/FrontPage.php:27, ../src/FieldsGroups/FrontPage.php:116
 msgid "About"
-msgstr ""
+msgstr "Sobre"
 
 #: ../src/FieldsGroups/FrontPage.php:31
 msgid "Gallery"
-msgstr ""
+msgstr "Galeria"
 
 #: ../src/FieldsGroups/FrontPage.php:32
 msgid "Images"
-msgstr ""
+msgstr "Imagens"
 
 #: ../src/FieldsGroups/FrontPage.php:35, ../src/FieldsGroups/FrontPage.php:87
 msgid "Services"
-msgstr ""
+msgstr "Serviços"
 
-#: ../src/FieldsGroups/FrontPage.php:39, ../src/FieldsGroups/FrontPage.php:94, ../src/FieldsGroups/FrontPage.php:145, ../src/FieldsGroups/FrontPage.php:151
+#: ../src/FieldsGroups/FrontPage.php:39, ../src/FieldsGroups/FrontPage.php:94,
+#: ../src/FieldsGroups/FrontPage.php:145, ../src/FieldsGroups/FrontPage.php:151
 msgid "Testimonials"
-msgstr ""
+msgstr "Depoimentos"
 
 #: ../src/FieldsGroups/FrontPage.php:43, ../src/FieldsGroups/FrontPage.php:173
 msgid "Clients"
-msgstr ""
+msgstr "Clientes"
 
 #: ../src/FieldsGroups/FrontPage.php:47, ../src/FieldsGroups/FrontPage.php:201
 msgid "Contact"
-msgstr ""
+msgstr "Contato"
 
-#: ../src/FieldsGroups/FrontPage.php:73, ../src/FieldsGroups/FrontPage.php:90, ../src/FieldsGroups/FrontPage.php:119, ../src/FieldsGroups/FrontPage.php:128, ../src/FieldsGroups/FrontPage.php:148, ../src/FieldsGroups/FrontPage.php:176, ../src/FieldsGroups/FrontPage.php:204
+#: ../src/FieldsGroups/FrontPage.php:73, ../src/FieldsGroups/FrontPage.php:90,
+#: ../src/FieldsGroups/FrontPage.php:119,
+#: ../src/FieldsGroups/FrontPage.php:128,
+#: ../src/FieldsGroups/FrontPage.php:148,
+#: ../src/FieldsGroups/FrontPage.php:176, ../src/FieldsGroups/FrontPage.php:204
 msgid "Title"
-msgstr ""
+msgstr "Título"
 
 #: ../src/FieldsGroups/FrontPage.php:74, ../src/FieldsGroups/FrontPage.php:102
 msgid "Button"
-msgstr ""
+msgstr "Botão"
 
-#: ../src/FieldsGroups/FrontPage.php:91, ../src/FieldsGroups/FrontPage.php:120, ../src/FieldsGroups/FrontPage.php:149, ../src/FieldsGroups/FrontPage.php:177, ../src/FieldsGroups/FrontPage.php:205
+#: ../src/FieldsGroups/FrontPage.php:91, ../src/FieldsGroups/FrontPage.php:120,
+#: ../src/FieldsGroups/FrontPage.php:149,
+#: ../src/FieldsGroups/FrontPage.php:177, ../src/FieldsGroups/FrontPage.php:205
 msgid "Subtitle"
-msgstr ""
+msgstr "Subtítulo"
 
-#: ../src/FieldsGroups/FrontPage.php:92, ../src/FieldsGroups/FrontPage.php:98, ../src/FieldsGroups/FrontPage.php:121, ../src/FieldsGroups/FrontPage.php:129, ../src/FieldsGroups/FrontPage.php:157, ../src/FieldsGroups/FrontPage.php:178
+#: ../src/FieldsGroups/FrontPage.php:92, ../src/FieldsGroups/FrontPage.php:98,
+#: ../src/FieldsGroups/FrontPage.php:121,
+#: ../src/FieldsGroups/FrontPage.php:129,
+#: ../src/FieldsGroups/FrontPage.php:157, ../src/FieldsGroups/FrontPage.php:178
 msgid "Description"
-msgstr ""
+msgstr "Descrição"
 
 #: ../src/FieldsGroups/FrontPage.php:97, ../src/FieldsGroups/FrontPage.php:156
 msgid "Client"
-msgstr ""
+msgstr "Cliente"
 
 #: ../src/FieldsGroups/FrontPage.php:103, ../src/FieldsGroups/FrontPage.php:155
 msgid "Image"
-msgstr ""
+msgstr "Imagem"
 
 #: ../src/FieldsGroups/FrontPage.php:123, ../src/FieldsGroups/FrontPage.php:180
 msgid "Cards"
-msgstr ""
+msgstr "Cards"
 
 #: ../src/FieldsGroups/FrontPage.php:184
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: ../src/FieldsGroups/FrontPage.php:206
 msgid "Map"
-msgstr ""
+msgstr "Mapa"
 
 #: ../src/FieldsGroups/FrontPage.php:207
 msgid "Mail recipient"
-msgstr ""
+msgstr "Destinatário"
 
-#: ../src/FieldsGroups/SocialNetworks.php:22, ../src/FieldsGroups/SocialNetworks.php:36, ../src/Options/SocialNetworks.php:16, ../src/Options/SocialNetworks.php:17
+#: ../src/FieldsGroups/SocialNetworks.php:22,
+#: ../src/FieldsGroups/SocialNetworks.php:36,
+#: ../src/Options/SocialNetworks.php:16, ../src/Options/SocialNetworks.php:17
 msgid "Social Networks"
-msgstr ""
+msgstr "Redes sociais"
 
 #: ../src/Hooks/Theme.php:40
 msgid "Main Menu"
-msgstr ""
+msgstr "Menu principal"
 
 #: ../src/Hooks/Theme.php:41
 msgid "Mobile Menu"
-msgstr ""
+msgstr "Menu mobile"
 
 #: ../src/Hooks/Theme.php:42
 msgid "Footer Menu"
-msgstr ""
+msgstr "Menu footer"
