@@ -11,7 +11,7 @@
 		"format": "prettier --write \"src/**/*.{js,jsx,scss}\"",
 		"stylelint": "stylelint \"src/**/*.{css,scss}\"",
 		"stylelint:fix": "stylelint \"src/**/*.{css,scss}\" --fix",
-		"wp-pot": "wp-pot --src '*.php' --dest-file 'languages/_s.pot' --domain '_s'"
+		"wp-pot": "wp-pot --src '**/*.php' --dest-file 'languages/piassi.pot' --domain 'piassi'"
 	},
 	"repository": {
 		"type": "git",
