@@ -25,7 +25,7 @@ class Theme extends Hook {
 	public function setup_theme(): void {
 		// Make theme available for translation.
 		// Translations can be filed in the /languages/ directory.
-		load_theme_textdomain( 'solidpress-theme', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'piassi', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
