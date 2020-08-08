@@ -12,8 +12,6 @@ $(window).ready(function() {
 		const url = $(this).attr('href');
 		const [, hash] = url.split('#');
 
-		console.log(parseInt(headerRef.outerHeight()) * -1);
-
 		if (hash) {
 			scrollWindowToElement(`#${hash}`, { offset: parseInt(headerRef.outerHeight()) * -1 });
 		}
