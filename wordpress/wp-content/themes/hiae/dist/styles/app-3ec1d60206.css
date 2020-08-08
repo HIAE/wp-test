@@ -168,6 +168,19 @@ body {
   content: "";
   margin-top: 20px; }
 
+.section-title .detail, .section-title .subtitle {
+  color: #c5c5c5; }
+
+.section-title .detail {
+  text-transform: uppercase; }
+
+.section-title .title {
+  font-size: 34px;
+  font-weight: 700; }
+
+.section-title .subtitle {
+  font-size: 16px; }
+
 .about {
   padding: 145px 0 235px 0;
   background: url("../images/banner.jpg") no-repeat 110% bottom;
@@ -181,6 +194,39 @@ body {
   .about h2 {
     margin: 45px 0 100px 0;
     line-height: 24px; }
+
+.description {
+  margin: 115px 0; }
+  .description .section-title h2 {
+    margin: 20px 0;
+    line-height: 45px; }
+  .description .content {
+    display: flex;
+    justify-content: space-between; }
+  .description .welcome {
+    width: 32%; }
+  .description .skills {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 63%; }
+    .description .skills .skill {
+      display: flex;
+      flex-direction: column;
+      flex: 0 1 48%; }
+      .description .skills .skill h4 {
+        margin-bottom: 5px;
+        order: 2; }
+      .description .skills .skill p {
+        order: 3; }
+      .description .skills .skill .icon {
+        order: 1;
+        margin-bottom: 30px;
+        display: block;
+        color: #d2b356;
+        font-size: 20px; }
+      .description .skills .skill:nth-child(1n + 1) {
+        margin-bottom: 50px; }
 
 .header {
   border-bottom: 1px solid #eff0ef; }
@@ -212,4 +258,4 @@ body {
   .social a + a {
     margin-left: 15px; }
 
-/*# sourceMappingURL=sourcemaps/app-d9dabca8cc.css.map */
+/*# sourceMappingURL=sourcemaps/app-3ec1d60206.css.map */

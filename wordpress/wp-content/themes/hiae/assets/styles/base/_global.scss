@@ -76,3 +76,18 @@ body{
         }
     }
 }
+.section-title{
+    .detail, .subtitle{
+        color:#c5c5c5;
+    }
+    .detail{
+        text-transform: uppercase;
+    }
+    .title{
+        font-size: 34px;
+        font-weight: 700;
+    }
+    .subtitle{
+        font-size: 16px;
+    }
+}
