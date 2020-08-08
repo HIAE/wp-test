@@ -1,0 +1,22 @@
+/**
+ * Converts PX to REM
+ *
+ * @param {string} $size Value in pixels
+ * @param {string} $root-size Base value in pixels
+ */
+@function rem-calc($size, $root-size: $font-root-size) {
+	$rem-size: $size / $root-size;
+	@return #{$rem-size}rem;
+}
+
+
+
+/**
+ * Returns font-size as REM
+ *
+ * @param {string} $size Value in pixels
+ * @param {string} $root-size Base value in pixels
+ */
+@mixin font-rem($size, $root-size: $font-root-size) {
+	font-size: rem-calc($size, $root-size);
+}

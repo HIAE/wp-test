@@ -8,8 +8,8 @@ wordpress/*
 wordpress/wp-content/*
 !wordpress/wp-content/themes
 
-wordpress/wp-content/themes/*
-!wordpress/wp-content/themes/your-theme/
+#wordpress/wp-content/themes/*
+!wordpress/wp-content/themes/your-theme/hiae
 
 .DS_Store
 .idea
