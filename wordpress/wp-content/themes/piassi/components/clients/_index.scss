@@ -1,0 +1,9 @@
+._clients {
+	.logos {
+		@include media-breakpoint-up(lg) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 0px 0px;
+		}
+	}
+}

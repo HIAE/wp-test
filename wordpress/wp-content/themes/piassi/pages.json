@@ -1,0 +1,5 @@
+{
+	"front-page": ["./pages/front-page/scripts.js", "./pages/front-page/styles.scss"],
+	"index": ["./pages/index/scripts.js", "./pages/index/styles.scss"],
+	"404": ["./pages/404/scripts.js", "./pages/404/styles.scss"]
+}

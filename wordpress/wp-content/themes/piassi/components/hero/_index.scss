@@ -1,0 +1,12 @@
+._hero {
+	background-size: cover;
+
+	.title {
+		line-height: 3.5rem;
+	}
+
+	.description {
+		font-size: $font-size-base;
+		font-weight: normal;
+	}
+}

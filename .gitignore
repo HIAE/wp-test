@@ -9,7 +9,7 @@ wordpress/wp-content/*
 !wordpress/wp-content/themes
 
 wordpress/wp-content/themes/*
-!wordpress/wp-content/themes/your-theme/
+!wordpress/wp-content/themes/piassi/
 
 .DS_Store
 .idea

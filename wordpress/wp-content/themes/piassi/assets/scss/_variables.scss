@@ -1,0 +1,80 @@
+// Colors
+
+$primary: #d2b356;
+$secondary: #111111;
+
+$light: #c7c7c7;
+$dark: #111111;
+$gray: #f5f5f5;
+
+$theme-colors: ();
+$theme-colors: map-merge(
+	(
+		'primary': $primary,
+		'secondary': $secondary,
+		'success': $success,
+		'info': $info,
+		'warning': $warning,
+		'danger': $danger,
+		'dark': $dark,
+		'light': $light,
+		'white': $white,
+		'black': $black,
+		'gray': $gray
+	),
+	$theme-colors
+);
+
+$body-color: $dark;
+$link-color: theme-color('secondary');
+
+// Spacings
+
+$spacer: 20px;
+$spacers: () !default;
+
+$spacers: map-merge(
+	(
+		0: 0,
+		1: $spacer * 0.25,
+		2: $spacer * 0.5,
+		3: $spacer * 0.75,
+		4: $spacer,
+		5: $spacer * 1.5,
+		6: $spacer * 2,
+		7: $spacer * 2.5,
+		8: $spacer * 3,
+		9: $spacer * 6,
+		10: $spacer * 7
+	),
+	$spacers
+);
+
+// Box Shadow
+$box-shadow-sm: 0 0.125rem 0.1rem rgba(0, 0, 0, 0.045);
+
+// Text
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$headings-font-weight: 800;
+$headings-margin-bottom: 1.5rem;
+
+// Headings
+$h1-font-size: pxToRem(62);
+$h2-font-size: pxToRem(32);
+$h3-font-size: pxToRem(14);
+$h4-font-size: pxToRem(18);
+
+$headings-line-height: normal;
+
+// Buttons
+$btn-border-radius: 0;
+$btn-border-radius-lg: 0;
+$btn-border-radius-sm: 0;
+$btn-transition: all 0.25s ease-in-out;
+$btn-border-width: 3px;
+
+// Form
+$input-focus-border-color: $primary;
+$input-focus-box-shadow: 0 0 0 0.2rem lighten($primary, 30);
+$input-border-radius: 0px;
+$form-group-margin-bottom: $spacer;

@@ -1,0 +1,106 @@
+// Bootstrap
+@import 'mixins';
+@import 'bootstrap';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+// Common components
+@import '../../components/header';
+@import '../../components/social-networks/';
+
+// Additional imports
+@import '../../node_modules/animate.css/animate.min.css';
+
+$font-size-sm: 0.85rem;
+
+.page-wrapper {
+	overflow: hidden;
+}
+
+.animate-in-view {
+	opacity: 0;
+}
+
+.text-sm {
+	font-size: $font-size-sm;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.flex-center {
+	@extend .d-flex, .align-items-center, .justify-content-center;
+}
+
+body {
+	background-color: #ccc;
+	font-family: $font-family-sans-serif;
+}
+
+.line-decoration {
+	content: '';
+	display: block;
+	width: 25px;
+	height: 5px;
+	background-color: $primary;
+	position: absolute;
+	left: 0;
+}
+
+.bottom-line-decoration {
+	position: relative;
+
+	&:after {
+		@extend .line-decoration;
+		bottom: 0;
+		margin-bottom: -2.5px;
+	}
+}
+
+.top-line-decoration {
+	position: relative;
+
+	&:before {
+		@extend .line-decoration;
+		top: 0;
+		margin-top: -2.5px;
+	}
+}
+
+.centered-line-decoration {
+	&:before,
+	&:after {
+		left: 50%;
+		margin-left: -12.5px;
+	}
+}
+
+.form-group {
+	> label {
+		color: darken($color: $primary, $amount: 20);
+	}
+}
+
+.btn {
+	font-weight: 600;
+	font-size: $font-size-sm;
+	text-transform: uppercase;
+}
+
+.btn-outline-dark:not(:disabled):not(.disabled):active,
+.btn-outline-dark:not(:disabled):not(.disabled).active,
+.btn-outline-dark:focus,
+.btn-outline-dark:hover,
+.btn-outline-dark:active {
+	background-color: transparent;
+	color: darken($color: $primary, $amount: 20);
+	border-color: $primary;
+	box-shadow: $input-focus-box-shadow;
+}
+
+.btn .icon {
+	font-size: 0.65rem;
+}
