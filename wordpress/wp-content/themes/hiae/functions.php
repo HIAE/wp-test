@@ -22,5 +22,5 @@ new \app\Setup();
 new \app\Enqueue();
 
 // Custom Post Types
-new \app\PostTypes();
+new \app\SizeThumbnails();
 
