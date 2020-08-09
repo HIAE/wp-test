@@ -31,39 +31,44 @@
 			border: none;
 			outline: none;
 		}
-	}
 
-	.mobile-menu {
-		display: none;
-		z-index: 60;
-
-		&:before {
-			content: '';
-			display: block;
-			position: fixed;
-			top: 0;
-			left: 0;
-			background: #fff;
-			width: 100%;
-			padding: 0;
-			z-index: 50;
-			height: 100vh;
-			opacity: 0;
-			transition: opacity 0.25s ease-in-out;
-		}
-
-		&.active:before {
+		.icon {
+			transition: opacity 0.1s;
 			opacity: 1;
 		}
 
-		li {
-			margin: 1rem 0;
-			z-index: 70;
-			position: relative;
+		.icon-close {
+			position: absolute;
+			top: 2.5px;
+			left: 2.5px;
+			opacity: 0;
+			font-size: 25px;
+		}
 
-			a {
-				color: $primary;
+		&.active {
+			.icon-close {
+				opacity: 1;
 			}
+
+			.icon-menu {
+				opacity: 0;
+			}
+		}
+	}
+
+	.main-navigation {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		box-shadow: $box-shadow-sm;
+		display: none;
+
+		@include media-breakpoint-up(lg) {
+			position: relative;
+			box-shadow: none;
+			display: block !important;
+			width: auto;
 		}
 	}
 
@@ -73,6 +78,15 @@
 			align-items: center;
 			justify-content: center;
 			position: relative;
+			border-bottom: solid 1px $gray;
+
+			&:last-child {
+				border: none;
+			}
+
+			@include media-breakpoint-up(lg) {
+				border: none;
+			}
 
 			.sub-menu {
 				position: absolute;

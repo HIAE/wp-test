@@ -15,7 +15,7 @@ use Theme\Helpers\Utils;
     <div class="container">
         <div class="row">
             <?php if ( $testimonials ) : ?>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4 mb-6 mb-lg-0">
                 <?php
                 echo new Components\Carousel(
                     array(
@@ -29,7 +29,7 @@ use Theme\Helpers\Utils;
             </div>
             <?php endif; ?>
 
-            <div class="col-12 col-lg-4 pr-lg-6">
+            <div class="col-12 col-lg-4 pr-lg-6 mb-8 mb-lg-0">
                 <?php
                 echo new Components\SectionHeader(
                     array(
@@ -49,7 +49,9 @@ use Theme\Helpers\Utils;
                 <img
                     class="lozad"
                     src="<?php echo Utils::image_placeholder(); ?>"
-                    data-src="<?php echo $image; ?>"
+                    data-src="<?php echo $image->src; ?>"
+                    width="<?php echo $image->width; ?>"
+                    width="<?php echo $image->height; ?>"
                     alt="Dancer" />
             </div>
             <?php endif; ?>

@@ -10,7 +10,7 @@
 use Theme\Components;
 ?>
 <section
-    class="_hero d-flex align-items-center py-10 lozad <?php echo $class; ?>"
+    class="_hero d-flex align-items-center py-8 py-lg-10 lozad <?php echo $class; ?>"
     data-background-image="<?php echo $background_image; ?>">
     <div class="container">
         <div class="row">

@@ -1,5 +1,4 @@
 import $ from 'jquery';
-import { Swiper, Navigation, Pagination } from 'swiper';
 
 const header = () => {
 	const ref = $('._header');
@@ -23,8 +22,7 @@ const header = () => {
 
 		$('body').toggleClass('overflow-hidden');
 
-		ref
-			.find('.mobile-menu')
+		ref.find('.main-navigation')
 			.slideToggle(250)
 			.toggleClass('active');
 	});

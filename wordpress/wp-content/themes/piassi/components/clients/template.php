@@ -14,7 +14,7 @@ use Theme\Helpers\Utils;
 <section class="_clients mt-10 mb-n4 <?php echo $class; ?>" id="clientes">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4 mb-6 mb-lg-0">
                 <?php
                 echo new Components\SectionHeader(
                     array(

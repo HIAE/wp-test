@@ -37,9 +37,7 @@ class Theme extends Hook {
 		// This theme uses wp_nav_menu() in the Header and Footer.
 		register_nav_menus(
             array(
-				'main-menu'   => esc_html__( 'Main Menu', 'piassi' ),
-				'mobile-menu' => esc_html__( 'Mobile Menu', 'piassi' ),
-				'footer-menu' => esc_html__( 'Footer Menu', 'piassi' ),
+				'main-menu' => esc_html__( 'Main Menu', 'piassi' ),
             )
         );
 

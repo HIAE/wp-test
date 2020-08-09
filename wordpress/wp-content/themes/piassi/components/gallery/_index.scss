@@ -1,7 +1,9 @@
 ._gallery {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 0px 0px;
+	@include media-breakpoint-up(lg) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0px 0px;
+	}
 
 	a {
 		opacity: 1;
