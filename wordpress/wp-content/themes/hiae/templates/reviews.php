@@ -1,4 +1,4 @@
-<section class="reviews">
+<section id="opinioes" class="reviews">
 	
 	<div class="container">
 

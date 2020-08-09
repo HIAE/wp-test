@@ -5,8 +5,8 @@
 		<div class="content">
 
 			<div class="section-title">
-				<strong>Contato</strong>
-				<h1>Entre em contato, vamos tomar um café juntos.</h1>
+				<strong class="detail">Contato</strong>
+				<h1 class="title line line-bottom">Entre em contato, vamos tomar um café juntos.</h1>
 			</div>
 
 			<div class="container">
@@ -31,7 +31,7 @@
 							<textarea id="message" placeholder="Digite sua mensagem"></textarea>
 						</p>
 						<p>
-							<button class="button">Enviar mensagem</button>
+							<button class="buttons">Enviar mensagem</button>
 						</p>
 					</form>
 

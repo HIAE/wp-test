@@ -10,7 +10,7 @@
 
 <body <?php body_class(); ?> >
 
-	<header class="header">
+	<header id="header" class="header">
 
 		<div class="container">
 			

@@ -1,5 +1,12 @@
 .header{
+	border-top:20px solid #ccc;
 	border-bottom:1px solid #eff0ef;
+	position: fixed;
+	top:0;
+	left:20px;
+	right:20px;
+	z-index:5;
+	background: #fff;
 	.container{
 		display: flex;
 		justify-content: space-between;
@@ -19,7 +26,7 @@
 					color:$color1;
 					padding:25px 10px 20px 10px;
 					border-bottom:2px solid transparent;
-					&:hover{
+					&:hover, &.active{
 						color:$color2;
 						border-color:$color2;
 					}
