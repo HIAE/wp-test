@@ -16,7 +16,9 @@ use Theme\Components;
         <div class="row">
             <div class="col-12 col-lg-4">
                 <h1 class="title text-uppercasa pt-4 mb-6 top-line-decoration"><?php echo $title; ?></h1>
-                <div class="description text-muted mb-8 pb-2 bottom-line-decoration"><?php echo $description; ?></div>
+                <h2 class="description text-muted mb-8 pb-4 bottom-line-decoration">
+                    <?php echo wp_strip_all_tags( $description ); ?>
+                </h2>
                 <?php echo new Components\LinkButton( $button ); ?>
             </div>
         </div>
