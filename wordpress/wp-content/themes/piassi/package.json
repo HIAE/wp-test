@@ -72,6 +72,7 @@
 		"animate.css": "^4.1.0",
 		"axios": "^0.19.2",
 		"bootstrap": "^4.5.0",
+		"in-view": "^0.6.1",
 		"jquery": "^3.5.1",
 		"jquery-mask-plugin": "^1.14.16",
 		"lightbox2": "^2.11.3",

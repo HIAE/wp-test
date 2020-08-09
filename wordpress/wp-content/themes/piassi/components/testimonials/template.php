@@ -30,7 +30,9 @@ use Theme\Helpers\Utils;
             <div class="col-12">
                 <div class="row">
                     <?php foreach ( $testimonials as $testimonial ) : ?>
-                    <div class="testimonial col-12 col-lg-4 mt-6 text-center">
+                    <div
+                        class="testimonial col-12 col-lg-4 mt-6 text-center animate-in-view"
+                        data-animations="animate__animated animate__fadeInUp">
                         <?php if ( $testimonial['image'] ) : ?>
                         <img
                             class="lozad rounded-circle"

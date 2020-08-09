@@ -29,7 +29,9 @@ use Theme\Components;
             <div class="col-12 col-lg-8 pl-lg-7 mb-n7">
                 <div class="row">
                     <?php foreach ( $cards as $card ) : ?>
-                    <div class="card col-12 col-lg-6 mb-7">
+                    <div
+                        class="card col-12 col-lg-6 mb-7 animate-in-view"
+                        data-animations="animate__animated animate__fadeInUp">
                         <i class="text-primary icon icon-<?php echo $card['icon']; ?>"></i>
                         <h4 class="title mt-4 mb-2"><?php echo $card['title']; ?></h4>
                         <p class="description pr-2 m-0"><?php echo $card['description']; ?></p>

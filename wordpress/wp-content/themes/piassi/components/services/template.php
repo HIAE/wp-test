@@ -47,12 +47,13 @@ use Theme\Helpers\Utils;
             <?php if ( $image ) : ?>
             <div class="col-12 col-lg-4 d-flex align-items-end">
                 <img
-                    class="lozad"
+                    class="lozad animate-in-view"
                     src="<?php echo Utils::image_placeholder(); ?>"
                     data-src="<?php echo $image->src; ?>"
                     width="<?php echo $image->width; ?>"
                     width="<?php echo $image->height; ?>"
-                    alt="Dancer" />
+                    alt="Dancer"
+                    data-animations="animate__animated animate__fadeInRight" />
             </div>
             <?php endif; ?>
         </div>

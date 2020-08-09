@@ -34,12 +34,13 @@ use Theme\Helpers\Utils;
                     <div>
                         <div class="p-1 flex-center h-100">
                             <img
-                                class="lozad rounded-circle"
+                                class="lozad rounded-circle animate-in-view"
                                 src="<?php echo Utils::image_placeholder(); ?>"
                                 data-src="<?php echo $client['logo']->src; ?>"
                                 width="<?php echo $client['logo']->width; ?>"
                                 height="<?php echo $client['logo']->height; ?>"
-                                alt="<?php echo $client['name']; ?>">
+                                alt="<?php echo $client['name']; ?>"
+                                data-animations="animate__animated animate__fadeIn">
                         </div>
                     </div>
                     <?php endforeach; ?>

@@ -17,7 +17,11 @@ if ( ! $gallery ) {
 <div class="container" id="portfolio">
     <section class="_gallery mt-10 <?php echo $class; ?>">
         <?php foreach ( $gallery as $image ) : ?>
-        <a href="<?php echo $image['url']; ?>" data-lightbox="gallery">
+        <a
+            class="animate-in-view"
+            href="<?php echo $image['url']; ?>"
+            data-lightbox="gallery"
+            data-animations="animate__animated animate__fadeIn">
             <img
                 class="lozad"
                 src="<?php echo Utils::image_placeholder(); ?>"

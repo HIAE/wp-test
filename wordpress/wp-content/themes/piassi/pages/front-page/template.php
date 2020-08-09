@@ -10,7 +10,7 @@
 use Theme\Components;
 ?>
 
-<div id="front-page" class="page">
+<div id="front-page" class="page-wrapper">
     <?php
 		echo new Components\Hero( $hero );
 

@@ -14,6 +14,14 @@
 
 $font-size-sm: 0.85rem;
 
+.page-wrapper {
+	overflow: hidden;
+}
+
+.animate-in-view {
+	opacity: 0;
+}
+
 .text-sm {
 	font-size: $font-size-sm;
 }
