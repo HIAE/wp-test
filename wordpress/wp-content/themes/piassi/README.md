@@ -45,6 +45,8 @@ Every folder inside 'src' is a namespace inside 'Theme' vendor namespace.
 
 3.  Enjoy your development with webpack assets bundling and browser-sync hot-reload at http://localhost:3000
 
+**Pro-tip: If you do use Visual Studio Code, this theme contains a workspace file.**
+
 ## Building for production
 
 `npm run build`
