@@ -11,6 +11,7 @@ const contactForm = () => {
 		e.preventDefault();
 
 		refFormSpinner.removeClass('d-none');
+		refFormButton.find('.icon').addClass('d-none');
 		refFormButton.attr('disabled', 'disabled');
 
 		axios
@@ -32,6 +33,7 @@ const contactForm = () => {
 				ref.find('input[type=text], input[type=email], select, textarea').val('');
 
 				refFormAlert.removeClass('d-none');
+				refFormButton.find('.icon').removeClass('d-none');
 				refFormAlert.html(data.message);
 			});
 	});

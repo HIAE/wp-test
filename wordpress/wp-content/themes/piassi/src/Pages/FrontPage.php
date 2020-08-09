@@ -43,7 +43,8 @@ class FrontPage extends Page {
             $home_fields['services']['testimonials']
 		);
 
-		$home_fields['services']['button']['class'] = 'scroll-link';
+		$home_fields['services']['button']['class']  = 'scroll-link';
+		$home_fields['services']['button']['title'] .= '<i class="icon icon-play ml-2"></i>';
 
 		return $home_fields;
 	}
