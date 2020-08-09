@@ -1,7 +1,9 @@
 .about{
 	padding:145px 0 235px 0;
-	background: url("../images/banner.jpg") no-repeat 110% bottom;
-	background-size: 50%;
+	//background: url("../images/banner.jpg") no-repeat 110% bottom;
+	background-repeat: no-repeat !important;
+	background-position: 110% bottom !important;
+	background-size: 50% !important;
 	.content{
 		width: 425px
 	}

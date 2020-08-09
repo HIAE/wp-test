@@ -2,7 +2,6 @@
 
 add_filter('show_admin_bar', '__return_false');
 
-
 function app_autoloader($class) {
 
 	$path = dirname(__FILE__) . DIRECTORY_SEPARATOR;
@@ -25,5 +24,3 @@ new \app\Enqueue();
 // Custom Post Types
 new \app\PostTypes();
 
-// Custom Post Types
-//new \app\OptionsPage();

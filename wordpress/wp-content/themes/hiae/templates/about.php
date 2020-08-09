@@ -1,11 +1,16 @@
-<section id="sobre" class="about">
-	<div class="container">
-		<div class="content">
-			<div class="section-title">
-				<h1 class="line line-top">Esta é minha página</h1>
-				<h2 class="line line-bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h2>
+<?php
+if( class_exists( 'AboutOptionsPage' ) ) { ?>
+
+	<section id="sobre" class="about" style="background: url(<?= get_option('about_option_name')['image']; ?>);">
+		<div class="container">
+			<div class="content">
+				<div class="section-title">
+					<h1 class="line line-top"><?= get_option('about_option_name')['title']; ?></h1>
+					<h2 class="line line-bottom"><?= get_option('about_option_name')['subtitle']; ?></h2>
+				</div>
+				<a href="#portfolio" class="buttons">Meu portfólio</a>
 			</div>
-			<a href="" class="buttons">Meu portfólio</a>
 		</div>
-	</div>
-</section>
+	</section>
+
+	<?php } ?>
