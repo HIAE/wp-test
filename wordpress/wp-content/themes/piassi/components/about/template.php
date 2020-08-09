@@ -32,7 +32,7 @@ use Theme\Components;
                     <div class="card col-12 col-lg-6 mb-7">
                         <i class="text-primary icon icon-<?php echo $card['icon']; ?>"></i>
                         <h4 class="title mt-4 mb-2"><?php echo $card['title']; ?></h4>
-                        <div class="description pr-2"><?php echo $card['description']; ?></div>
+                        <p class="description pr-2 m-0"><?php echo $card['description']; ?></p>
                     </div>
                     <?php endforeach; ?>
                 </div>

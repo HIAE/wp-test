@@ -126,7 +126,7 @@ class FrontPage extends FieldGroup {
 							'sub_fields' => array(
 								'icon'        => Icons::select_field(),
 								'title'       => new Fields\Text( __( 'Title', 'piassi' ) ),
-								'description' => new Fields\Editor( __( 'Description', 'piassi' ) ),
+								'description' => new Fields\Textarea( __( 'Description', 'piassi' ) ),
 							),
 						)
 					),
