@@ -41,9 +41,9 @@ class ContactForm extends Hook {
 			$subject = $mail_subject . ' - ' . Utils::sanitize_post( $_POST['subject'] ?? '' );
 
 			$body  = '<p>Você recebeu um novo email.</p>';
-			$body .= '<p><strong>' . __( 'Name', 'piassi' ) . ':</strong>' . Utils::sanitize_post( $_POST['name'] ?? '' ) . '</p>';
-			$body .= '<p><strong>' . __( 'Email', 'piassi' ) . ' :</strong>' . Utils::sanitize_post( $_POST['email'] ?? '' ) . '</p>';
-			$body .= '<p><strong>' . __( 'Message', 'piassi' ) . ':</strong><br/>' . Utils::sanitize_post( $_POST['message'] ?? '' ) . '</p>';
+			$body .= '<p><strong>' . __( 'Name', 'piassi' ) . ':</strong>' . $_POST['name'] . '</p>';
+			$body .= '<p><strong>' . __( 'Email', 'piassi' ) . ' :</strong>' . $_POST['email'] . '</p>';
+			$body .= '<p><strong>' . __( 'Message', 'piassi' ) . ':</strong><br/>' . $_POST['message'] . '</p>';
 
 			$headers = array( 'Content-Type: text/html; charset=UTF-8' );
 
@@ -55,7 +55,6 @@ class ContactForm extends Hook {
 
 			wp_send_json(
                 array(
-					'body'    => $body,
 					'error'   => false,
 					'message' => 'Email enviado com sucesso!',
                 )
@@ -63,7 +62,6 @@ class ContactForm extends Hook {
 		} catch ( \Throwable $e ) {
 			wp_send_json(
                 array(
-					'body'    => $body,
 					'error'   => true,
 					'message' => $e->getMessage(),
                 )
