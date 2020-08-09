@@ -13,27 +13,27 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../components/contact-form/template.php:19, ../src/FieldsGroups/FrontPage.php:185, ../src/Hooks/ContactForm.php:44
+#: ../components/contact-form/template.php:19, ../src/FieldsGroups/FrontPage.php:181, ../src/Hooks/ContactForm.php:44
 msgid "Name"
-msgstr "Nome"
+msgstr ""
 
 #: ../components/contact-form/template.php:25
 msgid "Type in your name"
-msgstr "Digite seu nome"
+msgstr ""
 
 #: ../components/contact-form/template.php:31, ../src/Hooks/ContactForm.php:45
 msgid "Email"
-msgstr "E-mail"
+msgstr ""
 
 #: ../components/contact-form/template.php:37
 msgid "Type in your email"
-msgstr "Digite seu email"
+msgstr ""
 
 #: ../components/contact-form/template.php:43
 msgid "Subject"
-msgstr "Assunto"
+msgstr ""
 
-#: ../components/contact-form/template.php:49, ../src/FieldsGroups/FrontPage.php:208
+#: ../components/contact-form/template.php:49, ../src/FieldsGroups/FrontPage.php:204
 msgid "Mail subject"
 msgstr ""
 
@@ -49,75 +49,79 @@ msgstr ""
 msgid "Send message"
 msgstr ""
 
-#: ../src/FieldsGroups/FrontPage.php:23, ../src/FieldsGroups/FrontPage.php:70
+#: ../components/message-404/template.php:13
+msgid "Oops, page not found!"
+msgstr ""
+
+#: ../components/message-404/template.php:16
+msgid "The page you were looking for could not be found. It might have been removed, renamed, or did not exist in the first place."
+msgstr ""
+
+#: ../components/message-404/template.php:21
+msgid "Go to home!"
+msgstr ""
+
+#: ../src/FieldsGroups/FrontPage.php:23, ../src/FieldsGroups/FrontPage.php:66
 msgid "Hero"
 msgstr ""
 
-#: ../src/FieldsGroups/FrontPage.php:27, ../src/FieldsGroups/FrontPage.php:116
+#: ../src/FieldsGroups/FrontPage.php:27, ../src/FieldsGroups/FrontPage.php:112
 msgid "About"
 msgstr ""
 
-#: ../src/FieldsGroups/FrontPage.php:31
-msgid "Gallery"
-msgstr ""
-
-#: ../src/FieldsGroups/FrontPage.php:32
-msgid "Images"
-msgstr ""
-
-#: ../src/FieldsGroups/FrontPage.php:35, ../src/FieldsGroups/FrontPage.php:87
+#: ../src/FieldsGroups/FrontPage.php:31, ../src/FieldsGroups/FrontPage.php:83
 msgid "Services"
 msgstr ""
 
-#: ../src/FieldsGroups/FrontPage.php:39, ../src/FieldsGroups/FrontPage.php:94, ../src/FieldsGroups/FrontPage.php:145, ../src/FieldsGroups/FrontPage.php:151
+#: ../src/FieldsGroups/FrontPage.php:35, ../src/FieldsGroups/FrontPage.php:90, ../src/FieldsGroups/FrontPage.php:141, ../src/FieldsGroups/FrontPage.php:147
 msgid "Testimonials"
 msgstr ""
 
-#: ../src/FieldsGroups/FrontPage.php:43, ../src/FieldsGroups/FrontPage.php:173
+#: ../src/FieldsGroups/FrontPage.php:39, ../src/FieldsGroups/FrontPage.php:169
 msgid "Clients"
 msgstr ""
 
-#: ../src/FieldsGroups/FrontPage.php:47, ../src/FieldsGroups/FrontPage.php:201
+#: ../src/FieldsGroups/FrontPage.php:43, ../src/FieldsGroups/FrontPage.php:197
 msgid "Contact"
 msgstr ""
 
-#: ../src/FieldsGroups/FrontPage.php:73, ../src/FieldsGroups/FrontPage.php:90, ../src/FieldsGroups/FrontPage.php:119, ../src/FieldsGroups/FrontPage.php:128, ../src/FieldsGroups/FrontPage.php:148, ../src/FieldsGroups/FrontPage.php:176, ../src/FieldsGroups/FrontPage.php:204
+#: ../src/FieldsGroups/FrontPage.php:69, ../src/FieldsGroups/FrontPage.php:86, ../src/FieldsGroups/FrontPage.php:115, ../src/FieldsGroups/FrontPage.php:124, ../src/FieldsGroups/FrontPage.php:144, ../src/FieldsGroups/FrontPage.php:172, ../src/FieldsGroups/FrontPage.php:200
 msgid "Title"
 msgstr ""
 
-#: ../src/FieldsGroups/FrontPage.php:74, ../src/FieldsGroups/FrontPage.php:102
+#: ../src/FieldsGroups/FrontPage.php:70, ../src/FieldsGroups/FrontPage.php:98
 msgid "Button"
 msgstr ""
 
-#: ../src/FieldsGroups/FrontPage.php:91, ../src/FieldsGroups/FrontPage.php:120, ../src/FieldsGroups/FrontPage.php:149, ../src/FieldsGroups/FrontPage.php:177, ../src/FieldsGroups/FrontPage.php:205
+#: ../src/FieldsGroups/FrontPage.php:87, ../src/FieldsGroups/FrontPage.php:116, ../src/FieldsGroups/FrontPage.php:145, ../src/FieldsGroups/FrontPage.php:173, ../src/FieldsGroups/FrontPage.php:201
 msgid "Subtitle"
 msgstr ""
 
-#: ../src/FieldsGroups/FrontPage.php:92, ../src/FieldsGroups/FrontPage.php:98, ../src/FieldsGroups/FrontPage.php:121, ../src/FieldsGroups/FrontPage.php:129, ../src/FieldsGroups/FrontPage.php:157, ../src/FieldsGroups/FrontPage.php:178
+#: ../src/FieldsGroups/FrontPage.php:88, ../src/FieldsGroups/FrontPage.php:94, ../src/FieldsGroups/FrontPage.php:117, ../src/FieldsGroups/FrontPage.php:125, ../src/FieldsGroups/FrontPage.php:153, ../src/FieldsGroups/FrontPage.php:174
 msgid "Description"
 msgstr ""
 
-#: ../src/FieldsGroups/FrontPage.php:97, ../src/FieldsGroups/FrontPage.php:156
+#: ../src/FieldsGroups/FrontPage.php:93, ../src/FieldsGroups/FrontPage.php:152
 msgid "Client"
 msgstr ""
 
-#: ../src/FieldsGroups/FrontPage.php:103, ../src/FieldsGroups/FrontPage.php:155
+#: ../src/FieldsGroups/FrontPage.php:99, ../src/FieldsGroups/FrontPage.php:151
 msgid "Image"
 msgstr ""
 
-#: ../src/FieldsGroups/FrontPage.php:123, ../src/FieldsGroups/FrontPage.php:180
+#: ../src/FieldsGroups/FrontPage.php:119, ../src/FieldsGroups/FrontPage.php:176
 msgid "Cards"
 msgstr ""
 
-#: ../src/FieldsGroups/FrontPage.php:184
+#: ../src/FieldsGroups/FrontPage.php:180
 msgid "Logo"
 msgstr ""
 
-#: ../src/FieldsGroups/FrontPage.php:206
+#: ../src/FieldsGroups/FrontPage.php:202
 msgid "Map"
 msgstr ""
 
-#: ../src/FieldsGroups/FrontPage.php:207
+#: ../src/FieldsGroups/FrontPage.php:203
 msgid "Mail recipient"
 msgstr ""
 
@@ -129,10 +133,67 @@ msgstr ""
 msgid "Main Menu"
 msgstr ""
 
-#: ../src/Hooks/Theme.php:41
-msgid "Mobile Menu"
+#: ../src/PostTypes/PortfolioItem.php:18, ../src/PostTypes/PortfolioItem.php:20
+msgctxt "Post Type Labels"
+msgid "Portfolio"
 msgstr ""
 
-#: ../src/Hooks/Theme.php:42
-msgid "Footer Menu"
+#: ../src/PostTypes/PortfolioItem.php:19, ../src/PostTypes/PortfolioItem.php:35
+msgctxt "Post Type Labels"
+msgid "Portfolio Item"
+msgstr ""
+
+#: ../src/PostTypes/PortfolioItem.php:21
+msgctxt "Post Type Labels"
+msgid "Todos os Itens"
+msgstr ""
+
+#: ../src/PostTypes/PortfolioItem.php:22
+msgctxt "Post Type Labels"
+msgid "Adicionar novo"
+msgstr ""
+
+#: ../src/PostTypes/PortfolioItem.php:23
+msgctxt "Post Type Labels"
+msgid "Adicionar novo Portfolio Item"
+msgstr ""
+
+#: ../src/PostTypes/PortfolioItem.php:24
+msgctxt "Post Type Labels"
+msgid "Editar Portfolio Item"
+msgstr ""
+
+#: ../src/PostTypes/PortfolioItem.php:25
+msgctxt "Post Type Labels"
+msgid "Novo Portfolio Item"
+msgstr ""
+
+#: ../src/PostTypes/PortfolioItem.php:26
+msgctxt "Post Type Labels"
+msgid "Ver Portfolio Item"
+msgstr ""
+
+#: ../src/PostTypes/PortfolioItem.php:27
+msgctxt "Post Type Labels"
+msgid "Inserir na Portfolio Item"
+msgstr ""
+
+#: ../src/PostTypes/PortfolioItem.php:28
+msgctxt "Post Type Labels"
+msgid "Ver Portfolio"
+msgstr ""
+
+#: ../src/PostTypes/PortfolioItem.php:29
+msgctxt "Post Type Labels"
+msgid "Perquisar Portfolio"
+msgstr ""
+
+#: ../src/PostTypes/PortfolioItem.php:30
+msgctxt "Post Type Labels"
+msgid "Nenhum Portfolio Item encontrada"
+msgstr ""
+
+#: ../src/PostTypes/PortfolioItem.php:31
+msgctxt "Post Type Labels"
+msgid "Nenhum Portfolio Item encontrada na Lixeira"
 msgstr ""
