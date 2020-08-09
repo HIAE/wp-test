@@ -253,25 +253,25 @@ div .buttons {
     z-index: 2; }
 
 .slide[data-slide="slide-6"] {
-  background-color: rgba(157, 186, 211, 0.25); }
+  background-color: rgba(147, 24, 109, 0.25); }
 
 .slide[data-slide="slide-5"] {
-  background-color: rgba(106, 119, 155, 0.25); }
+  background-color: rgba(88, 150, 136, 0.25); }
 
 .slide[data-slide="slide-4"] {
-  background-color: rgba(68, 25, 128, 0.25); }
+  background-color: rgba(10, 163, 45, 0.25); }
 
 .slide[data-slide="slide-3"] {
-  background-color: rgba(109, 112, 209, 0.25); }
+  background-color: rgba(71, 94, 225, 0.25); }
 
 .slide[data-slide="slide-2"] {
-  background-color: rgba(191, 230, 131, 0.25); }
+  background-color: rgba(85, 216, 210, 0.25); }
 
 .slide[data-slide="slide-1"] {
-  background-color: rgba(76, 232, 110, 0.25); }
+  background-color: rgba(38, 75, 68, 0.25); }
 
 .slide[data-slide="slide-0"] {
-  background-color: rgba(202, 64, 9, 0.25); }
+  background-color: rgba(83, 85, 73, 0.25); }
 
 .slide-image {
   flex: 0 1 50%; }
@@ -378,6 +378,35 @@ div .buttons {
     .portfolio .lightbox.active {
       display: flex; }
 
+.reviews {
+  margin: 120px 0 190px 0; }
+  .reviews .section-title {
+    text-align: center;
+    margin-bottom: 65px; }
+    .reviews .section-title .title:after {
+      margin-left: auto;
+      margin-right: auto; }
+  .reviews .list {
+    display: flex;
+    justify-content: space-between; }
+    .reviews .list .review {
+      flex: 0 1 30%;
+      text-align: center; }
+      .reviews .list .review img {
+        width: 115px;
+        height: auto;
+        border-radius: 200px;
+        margin-bottom: 25px; }
+      .reviews .list .review blockquote p {
+        font-size: 16px; }
+        .reviews .list .review blockquote p.line:after {
+          margin-left: auto;
+          margin-right: auto; }
+      .reviews .list .review blockquote footer {
+        margin-top: 15px; }
+        .reviews .list .review blockquote footer cite {
+          font-size: 14px; }
+
 .services {
   margin-bottom: 90px; }
   .services .content {
@@ -444,4 +473,4 @@ div .buttons {
   .social a + a {
     margin-left: 15px; }
 
-/*# sourceMappingURL=sourcemaps/app-0e39213e48.css.map */
+/*# sourceMappingURL=sourcemaps/app-236fbc9096.css.map */
