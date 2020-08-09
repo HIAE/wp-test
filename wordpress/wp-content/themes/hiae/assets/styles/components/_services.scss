@@ -1,0 +1,65 @@
+.services{
+	.content{
+		display: flex;
+		aside{
+			width: 30%;
+			order:1;
+		}
+		article{
+			width: calc(70% - 30px);
+			order:2;
+			background: url("../images/dancer.jpg") no-repeat right top;
+			background-size: auto 740px;
+			.post{
+				width: 45%;
+				margin-left: 50px;
+			}
+		}
+	}
+	.entry{
+		.featured{
+			color:#c5c5c5;
+		}
+		p{
+			& + p{
+				margin-top: 30px;
+			}
+		}
+	}
+	.buttons{
+		width: 220px;
+		padding-right:15px;
+		position: relative;
+		margin-top:50px;
+		&:after{
+			content:"";
+			@include css-triangle(right, 7px);
+			@include vertical;
+			right:10px;
+			left:auto;
+		}
+	}
+	blockquote{
+		text-align: right;
+		p{
+			line-height: 28px;
+		}
+		footer{
+			font-size:14px;
+			margin-top: 15px;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: end;
+			&:before{
+				content:"";
+				width:15px;
+				height:2px;
+				display: block;
+				background:$color1;
+				margin-right: 10px;
+			}
+		}
+	}
+	margin-bottom: 90px;
+}

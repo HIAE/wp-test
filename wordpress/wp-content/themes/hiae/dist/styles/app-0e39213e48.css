@@ -128,7 +128,7 @@ nav a {
   font-size: 16px;
   font-weight: 700; }
 
-blockquote {
+blockquote p {
   font-size: 22px;
   font-weight: 300; }
 
@@ -143,7 +143,7 @@ body {
   width: 1200px;
   margin: 0 auto; }
 
-.buttons {
+div .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,9 +153,11 @@ body {
   font-weight: 700;
   width: 165px;
   height: 45px; }
-  .buttons:hover {
+  div .buttons:hover {
     border-color: #d2b356;
     color: #d2b356; }
+    div .buttons:hover:after {
+      border-left-color: #d2b356; }
 
 .line:before, .line:after {
   width: 30px;
@@ -179,7 +181,9 @@ body {
 
 .section-title .title {
   font-size: 34px;
-  font-weight: 700; }
+  font-weight: 700;
+  margin: 15px 0 20px 0;
+  line-height: 45px; }
 
 .section-title .subtitle {
   font-size: 16px; }
@@ -200,9 +204,6 @@ body {
 
 .description {
   margin: 115px 0; }
-  .description .section-title h2 {
-    margin: 20px 0;
-    line-height: 45px; }
   .description .content {
     display: flex;
     justify-content: space-between; }
@@ -252,25 +253,25 @@ body {
     z-index: 2; }
 
 .slide[data-slide="slide-6"] {
-  background-color: rgba(245, 147, 144, 0.25); }
+  background-color: rgba(157, 186, 211, 0.25); }
 
 .slide[data-slide="slide-5"] {
-  background-color: rgba(88, 171, 91, 0.25); }
+  background-color: rgba(106, 119, 155, 0.25); }
 
 .slide[data-slide="slide-4"] {
-  background-color: rgba(192, 18, 252, 0.25); }
+  background-color: rgba(68, 25, 128, 0.25); }
 
 .slide[data-slide="slide-3"] {
-  background-color: rgba(110, 102, 230, 0.25); }
+  background-color: rgba(109, 112, 209, 0.25); }
 
 .slide[data-slide="slide-2"] {
-  background-color: rgba(7, 94, 171, 0.25); }
+  background-color: rgba(191, 230, 131, 0.25); }
 
 .slide[data-slide="slide-1"] {
-  background-color: rgba(111, 125, 249, 0.25); }
+  background-color: rgba(76, 232, 110, 0.25); }
 
 .slide[data-slide="slide-0"] {
-  background-color: rgba(210, 42, 83, 0.25); }
+  background-color: rgba(202, 64, 9, 0.25); }
 
 .slide-image {
   flex: 0 1 50%; }
@@ -377,6 +378,65 @@ body {
     .portfolio .lightbox.active {
       display: flex; }
 
+.services {
+  margin-bottom: 90px; }
+  .services .content {
+    display: flex; }
+    .services .content aside {
+      width: 30%;
+      order: 1; }
+    .services .content article {
+      width: calc(70% - 30px);
+      order: 2;
+      background: url("../images/dancer.jpg") no-repeat right top;
+      background-size: auto 740px; }
+      .services .content article .post {
+        width: 45%;
+        margin-left: 50px; }
+  .services .entry .featured {
+    color: #c5c5c5; }
+  .services .entry p + p {
+    margin-top: 30px; }
+  .services .buttons {
+    width: 220px;
+    padding-right: 15px;
+    position: relative;
+    margin-top: 50px; }
+    .services .buttons:after {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      content: " ";
+      left: 0;
+      top: 0;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 7px solid #111;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px;
+      left: auto; }
+  .services blockquote {
+    text-align: right; }
+    .services blockquote p {
+      line-height: 28px; }
+    .services blockquote footer {
+      font-size: 14px;
+      margin-top: 15px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: end; }
+      .services blockquote footer:before {
+        content: "";
+        width: 15px;
+        height: 2px;
+        display: block;
+        background: #111;
+        margin-right: 10px; }
+
 .social a {
   color: #999; }
   .social a:hover {
@@ -384,4 +444,4 @@ body {
   .social a + a {
     margin-left: 15px; }
 
-/*# sourceMappingURL=sourcemaps/app-4c43b9cb21.css.map */
+/*# sourceMappingURL=sourcemaps/app-0e39213e48.css.map */
