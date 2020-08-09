@@ -385,25 +385,25 @@ div .buttons {
     z-index: 2; }
 
 .slide[data-slide="slide-6"] {
-  background-color: rgba(204, 157, 101, 0.25); }
+  background-color: rgba(47, 18, 41, 0.25); }
 
 .slide[data-slide="slide-5"] {
-  background-color: rgba(123, 98, 16, 0.25); }
+  background-color: rgba(157, 89, 105, 0.25); }
 
 .slide[data-slide="slide-4"] {
-  background-color: rgba(242, 245, 89, 0.25); }
+  background-color: rgba(138, 126, 153, 0.25); }
 
 .slide[data-slide="slide-3"] {
-  background-color: rgba(72, 73, 115, 0.25); }
+  background-color: rgba(211, 153, 185, 0.25); }
 
 .slide[data-slide="slide-2"] {
-  background-color: rgba(125, 18, 176, 0.25); }
+  background-color: rgba(152, 60, 120, 0.25); }
 
 .slide[data-slide="slide-1"] {
-  background-color: rgba(193, 184, 172, 0.25); }
+  background-color: rgba(54, 1, 66, 0.25); }
 
 .slide[data-slide="slide-0"] {
-  background-color: rgba(143, 188, 195, 0.25); }
+  background-color: rgba(167, 186, 92, 0.25); }
 
 .slide-image {
   flex: 0 1 50%; }
@@ -503,6 +503,9 @@ div .buttons {
       top: 20px;
       font-weight: 600;
       cursor: pointer; }
+    .portfolio .lightbox .content img {
+      width: 865px;
+      height: auto; }
     .portfolio .lightbox .content .arrow {
       font-size: 40px;
       color: #c5c5c5;
@@ -612,4 +615,4 @@ div .buttons {
   .social a + a {
     margin-left: 15px; }
 
-/*# sourceMappingURL=sourcemaps/app-eac6bb209b.css.map */
+/*# sourceMappingURL=sourcemaps/app-62d696e88f.css.map */

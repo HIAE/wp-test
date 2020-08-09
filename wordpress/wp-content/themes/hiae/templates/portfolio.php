@@ -1,76 +1,67 @@
-<section id="portfolio" class="portfolio">
+			<?php
+			$args = array (
+				'post_type'              => 'portfolio',
+				'post_status'            => 'publish',
+				'posts_per_page'         => '6',
+				'orderby'                => 'rand',
+			);
+			$query = new WP_Query( $args );
+			if ( $query->have_posts() ) { ?>
+				
 
-	<div class="container">
+				<section id="portfolio" class="portfolio">
 
-		<div class="content">
+					<div class="container">
 
-			<div class="job">
-				<figure>
-					<a href="<?php echo get_template_directory_uri(); ?>/dist/images/portfolio.jpg" title="Portfolio 1">
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/portfolio.jpg" alt="Portfolio 1">
-					</a>
-				</figure>
-			</div>
+						<div class="content">
 
-			<div class="job">
-				<figure>
-					<a href="<?php echo get_template_directory_uri(); ?>/dist/images/portfolio.jpg" title="Portfolio 2">
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/portfolio.jpg" alt="Portfolio 2">
-					</a>
-				</figure>
-			</div>
+							<?php 
+								$cont = 1;
+								while ( $query->have_posts() ) {
+								$query->the_post();	
+								$img_url = get_the_post_thumbnail_url(get_the_ID(),'portfolio');					
+								?>
 
-			<div class="job">
-				<figure>
-					<a href="<?php echo get_template_directory_uri(); ?>/dist/images/portfolio.jpg" title="Portfolio 3">
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/portfolio.jpg" alt="Portfolio 3">
-					</a>
-				</figure>
-			</div>
+								<div class="job job<?= $cont; ?>" data-count="<?= $cont; ?>">
+									<figure>
+										<a href="<?php echo $img_url; ?>" title="<?php the_title(); ?>">
+											<img src="<?php echo $img_url; ?>" alt="<?php the_title(); ?>">
+										</a>
+									</figure>
+								</div>
 
-			<div class="job">
-				<figure>
-					<a href="<?php echo get_template_directory_uri(); ?>/dist/images/portfolio.jpg" title="Portfolio 4">
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/portfolio.jpg" alt="Portfolio 4">
-					</a>
-				</figure>
-			</div>
+								<?php $cont++;
+							}
+							?>
 
-			<div class="job">
-				<figure>
-					<a href="<?php echo get_template_directory_uri(); ?>/dist/images/portfolio.jpg" title="Portfolio 5">
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/portfolio.jpg" alt="Portfolio 5">
-					</a>
-				</figure>
-			</div>
+						</div>
 
-			<div class="job">
-				<figure>
-					<a href="<?php echo get_template_directory_uri(); ?>/dist/images/portfolio.jpg" title="Portfolio 6">
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/portfolio.jpg" alt="Portfolio 6">
-					</a>
-				</figure>
-			</div>
-
-		</div>
-
-	</div>
+					</div>
 
 
-	<div class="lightbox">
-		<span class="close fas fa-times"></span>
-		<div class="content">
+					<div class="lightbox">
+						<span class="close fas fa-times"></span>
+						<div class="content">
 
-			<span class="arrow fas fa-angle-left"></span>
-			
-			<div class="img">
-				<img src="<?php echo get_template_directory_uri(); ?>/dist/images/portfolio.jpg" alt="Portfolio 6">
-			</div>
+							<span class="arrow arrow-left fas fa-angle-left"></span>
 
-			<span class="arrow fas fa-angle-right"></span>
+							<div class="img">
+								<figure>
+									<img src="<?php echo get_template_directory_uri(); ?>/dist/images/portfolio.jpg" alt="Portfolio 6">
+								</figure>
+							</div>
 
-		</div>
-	</div>
+							<span class="arrow arrow-right fas fa-angle-right"></span>
+
+						</div>
+					</div>
 
 
-</section>
+				</section>
+
+
+				<?php	
+			} else {
+			}
+			wp_reset_postdata();
+			?>	
