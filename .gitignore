@@ -10,6 +10,7 @@ wordpress/wp-content/*
 
 #wordpress/wp-content/themes/*
 !wordpress/wp-content/themes/your-theme/hiae
+!wordpress/wp-content/plugins
 
 .DS_Store
 .idea
