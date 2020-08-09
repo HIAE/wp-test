@@ -65,7 +65,7 @@
 
     <div class="alert alert-primary d-none form-alert" role="alert"></div>
 
-    <button type="submit" class="btn btn-outline-secondary flex-center">
+    <button type="submit" class="btn btn-outline-dark flex-center">
         <?php _e( 'Send message', 'piassi' ); ?>
         <div class="form-spinner spinner-border spinner-border-sm d-none ml-2" role="status"></div>
     </button>

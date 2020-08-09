@@ -89,3 +89,14 @@ body {
 	font-size: $font-size-sm;
 	text-transform: uppercase;
 }
+
+.btn-outline-dark:not(:disabled):not(.disabled):active,
+.btn-outline-dark:not(:disabled):not(.disabled).active,
+.btn-outline-dark:focus,
+.btn-outline-dark:hover,
+.btn-outline-dark:active {
+	background-color: transparent;
+	color: darken($color: $primary, $amount: 20);
+	border-color: $primary;
+	box-shadow: $input-focus-box-shadow;
+}
