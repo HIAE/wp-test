@@ -27,10 +27,6 @@ class FrontPage extends FieldGroup {
 				'about_tab'        => new Fields\Tab( __( 'About', 'piassi' ) ),
 				'about'            => $this->about_fields(),
 
-				// Gallery
-				'gallery_tab'      => new Fields\Tab( __( 'Gallery', 'piassi' ) ),
-				'gallery'          => new Fields\Gallery( __( 'Images', 'piassi' ) ),
-
 				// Services
 				'services_tab'     => new Fields\Tab( __( 'Services', 'piassi' ) ),
 				'services'         => $this->service_fields(),

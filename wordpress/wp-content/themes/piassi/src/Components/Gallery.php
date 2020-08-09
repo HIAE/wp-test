@@ -8,6 +8,8 @@
 namespace Theme\Components;
 
 use SolidPress\Core\Component;
+use Theme\Models\Image;
+use WP_Query;
 
 /**
  * Display ACF Gallery with thumbnails and lightbox
@@ -29,7 +31,32 @@ class Gallery extends Component {
      * @var string
      */
 	public $props = array(
-		'class'   => '',
-		'gallery' => '',
+		'class' => '',
 	);
+
+	/**
+	 * Query for portfolio items and return their thumbnails
+	 *
+	 * @return array
+	 */
+	public function get_props(): array {
+		$gallery = array();
+
+		$portfolio_query = new WP_Query(
+            array(
+				'post_type'      => 'portfolio-item',
+				'posts_per_page' => -1,
+            )
+        );
+
+		while ( $portfolio_query->have_posts() ) :
+			$portfolio_query->the_post();
+
+			$gallery[] = Image::from_post_thumbnail();
+		endwhile;
+
+		return array(
+			'gallery' => $gallery,
+		);
+	}
 }

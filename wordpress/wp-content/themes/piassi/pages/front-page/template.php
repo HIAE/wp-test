@@ -16,7 +16,7 @@ use Theme\Components;
 
 		echo new Components\About( $about );
 
-		echo new Components\Gallery( array( 'gallery' => $gallery ) );
+		echo new Components\Gallery();
 
 		echo new Components\Services( $services );
 
