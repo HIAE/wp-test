@@ -37,6 +37,7 @@ class Services extends Component {
 		'subtitle'     => '',
 		'description'  => '',
 		'testimonials' => array(),
+		'button'       => array(),
 		'image'        => null,
 	);
 }

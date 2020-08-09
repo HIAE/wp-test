@@ -40,11 +40,13 @@ class FrontPage extends Page {
             function ( $item ) {
 				return new Components\TestimonialCarousel( $item );
 			},
-            $home_fields['services']['testimonials']
+            $home_fields['services']['testimonials'] ?? array()
 		);
 
-		$home_fields['services']['button']['class']  = 'scroll-link';
-		$home_fields['services']['button']['title'] .= '<i class="icon icon-play ml-2"></i>';
+		if ( isset( $home_fields['services']['button'] ) ) {
+			$home_fields['services']['button']['class']  = 'scroll-link';
+			$home_fields['services']['button']['title'] .= '<i class="icon icon-play ml-2"></i>';
+		}
 
 		return $home_fields;
 	}
