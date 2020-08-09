@@ -202,6 +202,53 @@ div .buttons {
     margin: 45px 0 100px 0;
     line-height: 24px; }
 
+.customers .content {
+  display: flex;
+  justify-content: space-between; }
+  .customers .content .description {
+    width: 30%;
+    margin: 0; }
+  .customers .content .list {
+    width: 67%; }
+
+.customers .list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .customers .list .customer {
+    flex: 0 1 33.33%; }
+    .customers .list .customer a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      width: 100%;
+      padding: 65px 0; }
+      .customers .list .customer a:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.8); }
+      .customers .list .customer a h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        opacity: 0;
+        z-index: 3; }
+      .customers .list .customer a:hover h2 {
+        opacity: 1; }
+      .customers .list .customer a:hover:after {
+        content: ""; }
+
 .description {
   margin: 115px 0; }
   .description .content {
@@ -253,25 +300,25 @@ div .buttons {
     z-index: 2; }
 
 .slide[data-slide="slide-6"] {
-  background-color: rgba(147, 24, 109, 0.25); }
+  background-color: rgba(207, 180, 53, 0.25); }
 
 .slide[data-slide="slide-5"] {
-  background-color: rgba(88, 150, 136, 0.25); }
+  background-color: rgba(142, 180, 220, 0.25); }
 
 .slide[data-slide="slide-4"] {
-  background-color: rgba(10, 163, 45, 0.25); }
+  background-color: rgba(0, 170, 87, 0.25); }
 
 .slide[data-slide="slide-3"] {
-  background-color: rgba(71, 94, 225, 0.25); }
+  background-color: rgba(137, 52, 189, 0.25); }
 
 .slide[data-slide="slide-2"] {
-  background-color: rgba(85, 216, 210, 0.25); }
+  background-color: rgba(25, 205, 85, 0.25); }
 
 .slide[data-slide="slide-1"] {
-  background-color: rgba(38, 75, 68, 0.25); }
+  background-color: rgba(0, 143, 192, 0.25); }
 
 .slide[data-slide="slide-0"] {
-  background-color: rgba(83, 85, 73, 0.25); }
+  background-color: rgba(224, 222, 87, 0.25); }
 
 .slide-image {
   flex: 0 1 50%; }
@@ -473,4 +520,4 @@ div .buttons {
   .social a + a {
     margin-left: 15px; }
 
-/*# sourceMappingURL=sourcemaps/app-236fbc9096.css.map */
+/*# sourceMappingURL=sourcemaps/app-40b34fba95.css.map */

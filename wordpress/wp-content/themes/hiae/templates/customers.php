@@ -6,65 +6,73 @@
 
 			<div class="description">
 				<div class="section-title">
-					<strong>Clientes</strong>
-					<h1>Empresas que utilizam o meu serviço</h1>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+					<strong class="detail">Clientes</strong>
+					<h1 class="title line line-bottom">Empresas que utilizam o meu serviço</h1>
+					<p class="subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 				</div>
 			</div>
 
 			<div class="list">
 				
 				<figure class="customer">
-					<a href="https://via.placeholder.com/865x485" title="Customer 1">
-						<img src="https://via.placeholder.com/80x80" alt="Customer 1">
+					<a href="#" title="Customer 1">
+						<h2>Mustache</h2>
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/customer.jpg" alt="">
 					</a>
 				</figure>
 
 				<figure class="customer">
-					<a href="https://via.placeholder.com/865x485" title="Customer 1">
-						<img src="https://via.placeholder.com/80x80" alt="Customer 1">
+					<a href="#" title="Customer 1">
+						<h2>Mustache</h2>
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/customer.jpg" alt="">
 					</a>
 				</figure>
 
 				<figure class="customer">
-					<a href="https://via.placeholder.com/865x485" title="Customer 1">
-						<img src="https://via.placeholder.com/80x80" alt="Customer 1">
+					<a href="#" title="Customer 1">
+						<h2>Mustache</h2>
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/customer.jpg" alt="">
 					</a>
 				</figure>
 
 				<figure class="customer">
-					<a href="https://via.placeholder.com/865x485" title="Customer 1">
-						<img src="https://via.placeholder.com/80x80" alt="Customer 1">
+					<a href="#" title="Customer 1">
+						<h2>Mustache</h2>
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/customer.jpg" alt="">
 					</a>
 				</figure>
 
 				<figure class="customer">
-					<a href="https://via.placeholder.com/865x485" title="Customer 1">
-						<img src="https://via.placeholder.com/80x80" alt="Customer 1">
+					<a href="#" title="Customer 1">
+						<h2>Mustache</h2>
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/customer.jpg" alt="">
 					</a>
 				</figure>
 
 				<figure class="customer">
-					<a href="https://via.placeholder.com/865x485" title="Customer 1">
-						<img src="https://via.placeholder.com/80x80" alt="Customer 1">
+					<a href="#" title="Customer 1">
+						<h2>Mustache</h2>
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/customer.jpg" alt="">
 					</a>
 				</figure>
 
 				<figure class="customer">
-					<a href="https://via.placeholder.com/865x485" title="Customer 1">
-						<img src="https://via.placeholder.com/80x80" alt="Customer 1">
+					<a href="#" title="Customer 1">
+						<h2>Mustache</h2>
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/customer.jpg" alt="">
 					</a>
 				</figure>
 
 				<figure class="customer">
-					<a href="https://via.placeholder.com/865x485" title="Customer 1">
-						<img src="https://via.placeholder.com/80x80" alt="Customer 1">
+					<a href="#" title="Customer 1">
+						<h2>Mustache</h2>
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/customer.jpg" alt="">
 					</a>
 				</figure>
 
 				<figure class="customer">
-					<a href="https://via.placeholder.com/865x485" title="Customer 1">
-						<img src="https://via.placeholder.com/80x80" alt="Customer 1">
+					<a href="#" title="Customer 1">
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/images/customer.jpg" alt="">
 					</a>
 				</figure>
 
