@@ -33,17 +33,27 @@ Every folder inside 'src' is a namespace inside 'Theme' vendor namespace.
     ├── PostTypes         # Register custom post types
     └── Taxonomies        # Register Taxonomies
 
+## Setup
+
+1.  From the project root, run the docker container
+
+        docker-composer up -d
+
+1.  From the theme root, install php dependencies
+
+        composer install
+
+1.  From the theme root, install javascript dependencies
+
+        npm install
+
 ## Development
 
-1.  From the project root, run the docker container with
-
-        ```docker-composer up -d```
-
-2.  From theme root, start webpack with
+1.  From theme root, start webpack with
 
         ```npm run dev```
 
-3.  Enjoy your development with webpack assets bundling and browser-sync hot-reload at http://localhost:3000
+2.  Enjoy your development with webpack assets bundling and browser-sync hot-reload at http://localhost:3000
 
 **Pro-tip: If you do use Visual Studio Code, this theme contains a workspace file.**
 
