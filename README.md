@@ -35,7 +35,7 @@ Siga os passos abaixo para habilitar as configurações no sistema administrativ
 1.  Vá até o menu Aparência > Temas e habilite o tema "edersilva"
 
 
-2.  Em seguinda, vá no menu Plugins, e habilite os plugins: "Portfólio", "Página Sobre" e "Redes Sociais"
+2.  Em seguida, vá no menu Plugins, e habilite os plugins: "Portfólio", "Página Sobre" e "Redes Sociais"
 
 3.  Para finalizar, basta inserir as informações dinâmicas nas três novas áreas no admin.
 
