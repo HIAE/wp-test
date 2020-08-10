@@ -19,13 +19,14 @@
 								$cont = 1;
 								while ( $query->have_posts() ) {
 								$query->the_post();	
-								$img_url = get_the_post_thumbnail_url(get_the_ID(),'portfolio');					
+								$img_url = get_the_post_thumbnail_url(get_the_ID(),'portfolio');
+								$thumb_img_url = get_the_post_thumbnail_url(get_the_ID(),'thumb-portfolio');					
 								?>
 
 								<div class="job job<?= $cont; ?>" data-count="<?= $cont; ?>">
 									<figure>
 										<a href="<?php echo $img_url; ?>" title="<?php the_title(); ?>">
-											<img src="<?php echo $img_url; ?>" alt="<?php the_title(); ?>">
+											<img src="<?php echo $thumb_img_url; ?>" alt="<?php the_title(); ?>">
 										</a>
 									</figure>
 								</div>
