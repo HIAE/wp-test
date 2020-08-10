@@ -483,25 +483,25 @@ div .buttons {
     z-index: 2; }
 
 .slide[data-slide="slide-6"] {
-  background-color: rgba(190, 140, 10, 0.25); }
+  background-color: rgba(67, 193, 24, 0.25); }
 
 .slide[data-slide="slide-5"] {
-  background-color: rgba(107, 126, 50, 0.25); }
+  background-color: rgba(93, 25, 218, 0.25); }
 
 .slide[data-slide="slide-4"] {
-  background-color: rgba(1, 76, 53, 0.25); }
+  background-color: rgba(195, 249, 62, 0.25); }
 
 .slide[data-slide="slide-3"] {
-  background-color: rgba(9, 106, 129, 0.25); }
+  background-color: rgba(249, 73, 43, 0.25); }
 
 .slide[data-slide="slide-2"] {
-  background-color: rgba(62, 201, 246, 0.25); }
+  background-color: rgba(142, 160, 135, 0.25); }
 
 .slide[data-slide="slide-1"] {
-  background-color: rgba(45, 163, 147, 0.25); }
+  background-color: rgba(0, 101, 226, 0.25); }
 
 .slide[data-slide="slide-0"] {
-  background-color: rgba(147, 34, 163, 0.25); }
+  background-color: rgba(199, 13, 89, 0.25); }
 
 .slide-image {
   flex: 0 1 50%; }
@@ -787,4 +787,4 @@ div .buttons {
   .social a + a {
     margin-left: 15px; }
 
-/*# sourceMappingURL=sourcemaps/app-cb899c92d9.css.map */
+/*# sourceMappingURL=sourcemaps/app-9db8822e66.css.map */
