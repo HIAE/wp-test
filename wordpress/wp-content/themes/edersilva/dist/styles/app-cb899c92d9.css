@@ -264,7 +264,8 @@ div .buttons {
       height: 35px;
       width: 100%;
       padding-left: 10px;
-      font-size: 14px; }
+      font-size: 14px;
+      font-family: 'Open Sans', sans-serif; }
     .contact .form textarea {
       height: 60px;
       padding-top: 10px; }
@@ -288,6 +289,34 @@ div .buttons {
         transform: translateY(-50%);
         right: 10px;
         left: auto; }
+    .contact .form .action {
+      display: flex;
+      align-items: center; }
+      .contact .form .action #loading {
+        margin-left: 20px;
+        position: relative;
+        top: 4px;
+        display: none; }
+        .contact .form .action #loading.active {
+          display: block; }
+    .contact .form #success, .contact .form #error {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      font-size: 14px; }
+    .contact .form #success.active {
+      display: flex;
+      color: #155724;
+      background-color: #d4edda;
+      border-color: #c3e6cb; }
+    .contact .form #error.active {
+      display: flex;
+      color: #721c24;
+      background-color: #f8d7da;
+      border-color: #f5c6cb; }
   @media (max-width: 900px) {
     .contact {
       margin: 30px -15px;
@@ -454,25 +483,25 @@ div .buttons {
     z-index: 2; }
 
 .slide[data-slide="slide-6"] {
-  background-color: rgba(237, 115, 0, 0.25); }
+  background-color: rgba(190, 140, 10, 0.25); }
 
 .slide[data-slide="slide-5"] {
-  background-color: rgba(42, 158, 79, 0.25); }
+  background-color: rgba(107, 126, 50, 0.25); }
 
 .slide[data-slide="slide-4"] {
-  background-color: rgba(22, 236, 191, 0.25); }
+  background-color: rgba(1, 76, 53, 0.25); }
 
 .slide[data-slide="slide-3"] {
-  background-color: rgba(5, 107, 16, 0.25); }
+  background-color: rgba(9, 106, 129, 0.25); }
 
 .slide[data-slide="slide-2"] {
-  background-color: rgba(158, 193, 107, 0.25); }
+  background-color: rgba(62, 201, 246, 0.25); }
 
 .slide[data-slide="slide-1"] {
-  background-color: rgba(213, 34, 155, 0.25); }
+  background-color: rgba(45, 163, 147, 0.25); }
 
 .slide[data-slide="slide-0"] {
-  background-color: rgba(57, 21, 233, 0.25); }
+  background-color: rgba(147, 34, 163, 0.25); }
 
 .slide-image {
   flex: 0 1 50%; }
@@ -758,4 +787,4 @@ div .buttons {
   .social a + a {
     margin-left: 15px; }
 
-/*# sourceMappingURL=sourcemaps/app-cbeba6d63d.css.map */
+/*# sourceMappingURL=sourcemaps/app-cb899c92d9.css.map */

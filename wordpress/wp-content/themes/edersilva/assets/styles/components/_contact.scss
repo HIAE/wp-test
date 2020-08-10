@@ -46,6 +46,7 @@
 			width: 100%;
 			padding-left:10px;
 			font-size: 14px;
+			font-family: 'Open Sans', sans-serif;
 		}
 		textarea{
 			height: 60px;
@@ -61,6 +62,44 @@
 				@include vertical;
 				right:10px;
 				left:auto;
+			}
+		}
+		.action{
+			display: flex;
+			align-items: center;
+			#loading{
+				margin-left:20px;
+				position: relative;
+				top: 4px;
+				display: none;
+				&.active{
+					display: block;
+				}
+			}
+		}
+		#success, #error{
+			display: none;
+			justify-content: center;
+			align-items: center;
+			padding:10px 0;
+			border: 1px solid transparent;
+			border-radius: .25rem;
+			font-size:14px;
+		}
+		#success{
+			&.active{
+				display: flex;
+				color: #155724;
+				background-color: #d4edda;
+				border-color:#c3e6cb;
+			}
+		}
+		#error{
+			&.active{
+				display: flex;
+				color: #721c24;
+				background-color: #f8d7da;
+				border-color: #f5c6cb;
 			}
 		}
 	}

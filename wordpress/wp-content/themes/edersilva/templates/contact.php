@@ -30,9 +30,13 @@
 							<label for="message">Mensagem:</label>
 							<textarea id="message" placeholder="Digite sua mensagem"></textarea>
 						</p>
-						<p>
+						<p class="action">
 							<button type="submit" class="buttons btnSend">Enviar mensagem</button>
+							<span id="loading"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/loading.gif" alt="">
+									</span>
 						</p>
+						<div id="success">Enviado com sucesso!</div>
+						<div id="error">Houve um erro. tente novamente.</div>
 					</form>
 
 				</div>
