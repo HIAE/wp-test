@@ -73,14 +73,6 @@ class SocialMedia {
 		);
 
 		add_settings_field(
-			'google',
-			'Google Plus',
-			array( $this, 'google_field' ),
-			'social-admin',
-			'social_setting_section'
-		);
-
-		add_settings_field(
 			'twitter',
 			'Twitter',
 			array( $this, 'twitter_field' ),
@@ -89,9 +81,17 @@ class SocialMedia {
 		);
 
 		add_settings_field(
-			'instagram',
-			'Instagram',
-			array( $this, 'instagram_field' ),
+			'linkedin',
+			'Linkedin',
+			array( $this, 'linkedin_field' ),
+			'social-admin',
+			'social_setting_section'
+		);
+
+		add_settings_field(
+			'pinterest',
+			'Pinterest',
+			array( $this, 'pinterest_field' ),
 			'social-admin',
 			'social_setting_section'
 		);
@@ -100,6 +100,22 @@ class SocialMedia {
 			'behance',
 			'Behance',
 			array( $this, 'behance_field' ),
+			'social-admin',
+			'social_setting_section'
+		);
+
+		add_settings_field(
+			'google',
+			'Google Plus',
+			array( $this, 'google_field' ),
+			'social-admin',
+			'social_setting_section'
+		);
+
+		add_settings_field(
+			'instagram',
+			'Instagram',
+			array( $this, 'instagram_field' ),
 			'social-admin',
 			'social_setting_section'
 		);
@@ -113,20 +129,28 @@ class SocialMedia {
 			$sanitary_values['facebook'] = sanitize_text_field( $input['facebook'] );
 		}
 
-		if ( isset( $input['google'] ) ) {
-			$sanitary_values['google'] = sanitize_text_field( $input['google'] );
-		}
-
 		if ( isset( $input['twitter'] ) ) {
 			$sanitary_values['twitter'] = sanitize_text_field( $input['twitter'] );
 		}
 
-		if ( isset( $input['instagram'] ) ) {
-			$sanitary_values['instagram'] = sanitize_text_field( $input['instagram'] );
+		if ( isset( $input['linkedin'] ) ) {
+			$sanitary_values['linkedin'] = sanitize_text_field( $input['linkedin'] );
+		}
+
+		if ( isset( $input['pinterest'] ) ) {
+			$sanitary_values['pinterest'] = sanitize_text_field( $input['pinterest'] );
 		}
 
 		if ( isset( $input['behance'] ) ) {
 			$sanitary_values['behance'] = sanitize_text_field( $input['behance'] );
+		}
+
+		if ( isset( $input['google'] ) ) {
+			$sanitary_values['google'] = sanitize_text_field( $input['google'] );
+		}
+
+		if ( isset( $input['instagram'] ) ) {
+			$sanitary_values['instagram'] = sanitize_text_field( $input['instagram'] );
 		}
 
 		return $sanitary_values;
@@ -141,13 +165,6 @@ class SocialMedia {
 		);
 	}
 
-	public function google_field() {
-		printf(
-			'<input class="regular-text" type="text" name="social_option_name[google]" id="google" value="%s">',
-			isset( $this->social_options['google'] ) ? esc_attr( $this->social_options['google']) : ''
-		);
-	}
-
 	public function twitter_field() {
 		printf(
 			'<input class="regular-text" type="text" name="social_option_name[twitter]" id="twitter" value="%s">',
@@ -155,17 +172,38 @@ class SocialMedia {
 		);
 	}
 
-	public function instagram_field() {
+	public function linkedin_field() {
 		printf(
-			'<input class="regular-text" type="text" name="social_option_name[instagram]" id="instagram" value="%s">',
-			isset( $this->social_options['instagram'] ) ? esc_attr( $this->social_options['instagram']) : ''
+			'<input class="regular-text" type="text" name="social_option_name[linkedin]" id="linkedin" value="%s">',
+			isset( $this->social_options['linkedin'] ) ? esc_attr( $this->social_options['linkedin']) : ''
 		);
 	}
+
+	public function pinterest_field() {
+		printf(
+			'<input class="regular-text" type="text" name="social_option_name[pinterest]" id="instagram" value="%s">',
+			isset( $this->social_options['pinterest'] ) ? esc_attr( $this->social_options['pinterest']) : ''
+		);
+	}	
 
 	public function behance_field() {
 		printf(
 			'<input class="regular-text" type="text" name="social_option_name[behance]" id="behance" value="%s">',
 			isset( $this->social_options['behance'] ) ? esc_attr( $this->social_options['behance']) : ''
+		);
+	}
+
+	public function google_field() {
+		printf(
+			'<input class="regular-text" type="text" name="social_option_name[google]" id="google" value="%s">',
+			isset( $this->social_options['google'] ) ? esc_attr( $this->social_options['google']) : ''
+		);
+	}
+
+	public function instagram_field() {
+		printf(
+			'<input class="regular-text" type="text" name="social_option_name[instagram]" id="instagram" value="%s">',
+			isset( $this->social_options['instagram'] ) ? esc_attr( $this->social_options['instagram']) : ''
 		);
 	}
 
