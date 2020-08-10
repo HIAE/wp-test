@@ -85,4 +85,28 @@
 			display: flex;
 		}
 	}
+	@media(max-width: $break-md){
+		margin-bottom: 50px;
+		.content, .job a{
+			flex-direction: column;
+		}
+		.lightbox{
+			.content{
+				img{
+					width: 89%;
+					margin: 0 auto;
+					display: block;
+				}
+				.arrow{
+					font-size: 30px;
+					&.fa-angle-left{
+						left: 30px;
+					}
+					&.fa-angle-right{
+						right: 30px;
+					}
+				}
+			}
+		}
+	}
 }

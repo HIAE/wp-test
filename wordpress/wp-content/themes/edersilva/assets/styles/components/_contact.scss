@@ -64,4 +64,24 @@
 			}
 		}
 	}
+	@media(max-width: $break-md){
+		margin:30px -15px;
+		padding:30px 10px;
+		.content{
+			.container{
+				flex-direction: column;
+				.form, .map{
+					width: 100%;
+				}
+				.form{
+					padding:20px;
+				}
+				.map{
+					iframe{
+						height:350px;
+					}
+				}
+			}
+		}
+	}
 }

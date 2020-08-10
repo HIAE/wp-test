@@ -35,4 +35,18 @@
 			}
 		}
 	}
+	@media(max-width: $break-md){
+		.content, .skills, .skill{
+			flex-direction: column;
+			width: 100%;
+			flex: initial;
+		}
+		.welcome{
+			width: 100%;
+		}
+		.skill{
+			margin-top: 50px;
+			margin-bottom: 0 !important;
+		}
+	}
 }

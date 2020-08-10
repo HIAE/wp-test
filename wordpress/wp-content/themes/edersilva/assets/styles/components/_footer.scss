@@ -22,4 +22,18 @@
 		color:#fff;
 		background: #d2d2d2;
 	}
+	@media(max-width: $break-md){
+		.btn-top{
+			display: none;
+		}
+		.container{
+			height: 40px;
+			justify-content: center;
+			flex-direction: column;
+			padding-bottom: 15px;
+			.social{
+				margin-top: 5px;
+			}
+		}
+	}
 }

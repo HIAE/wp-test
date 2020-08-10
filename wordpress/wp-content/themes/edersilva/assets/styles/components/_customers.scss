@@ -53,4 +53,21 @@
 			}
 		}
 	}
+	@media(max-width: $break-md){
+		.content{
+			flex-direction: column;
+			.description, .list{
+				width: 100%;
+			}
+		}
+		.list{
+			flex-direction: column;
+			.customer{
+				flex:initial;
+				a{
+					flex-direction: column;
+				}
+			}
+		}
+	}
 }

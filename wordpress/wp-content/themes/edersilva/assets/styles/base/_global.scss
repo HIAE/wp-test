@@ -43,10 +43,16 @@ body{
     font-family: 'Open Sans', sans-serif;
     border:20px solid #ccc;
     padding:65px 0 0 0;
+    @media(max-width: $break-sm){
+        border:15px solid #fff;
+    }
 }
 .container{
     width:$break-lg;
     margin:0 auto;
+    @media(max-width: $break-lg - 1){
+        width:100%;
+    }
 }
 div .buttons{
     display: flex;
@@ -102,5 +108,11 @@ div .buttons{
     }
     .subtitle{
         font-size: 16px;
+    }
+    @media(max-width: $break-sm){
+        .title{
+            font-size: 30px;
+            line-height: 35px;
+        }
     }
 }

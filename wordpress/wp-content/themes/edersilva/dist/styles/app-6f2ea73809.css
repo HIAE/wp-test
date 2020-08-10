@@ -139,10 +139,16 @@ body {
   font-family: 'Open Sans', sans-serif;
   border: 20px solid #ccc;
   padding: 65px 0 0 0; }
+  @media (max-width: 768px) {
+    body {
+      border: 15px solid #fff; } }
 
 .container {
   width: 1200px;
   margin: 0 auto; }
+  @media (max-width: 1199px) {
+    .container {
+      width: 100%; } }
 
 div .buttons {
   display: flex;
@@ -190,6 +196,11 @@ div .buttons {
 .section-title .subtitle {
   font-size: 16px; }
 
+@media (max-width: 768px) {
+  .section-title .title {
+    font-size: 30px;
+    line-height: 35px; } }
+
 .about {
   padding: 145px 0 235px 0;
   background-repeat: no-repeat !important;
@@ -204,6 +215,19 @@ div .buttons {
   .about h2 {
     margin: 45px 0 100px 0;
     line-height: 24px; }
+  @media (max-width: 900px) {
+    .about {
+      padding: 20px 0 100px 0;
+      background-position: 25% bottom !important;
+      background-size: 150% !important;
+      margin: 0 -15px 0 0; }
+      .about h1 {
+        font-size: 45px; }
+      .about h2 {
+        margin: 25px 0 50px 0;
+        font-size: 16px; }
+      .about .content {
+        width: 100%; } }
 
 .contact {
   padding: 85px 0;
@@ -264,6 +288,18 @@ div .buttons {
         transform: translateY(-50%);
         right: 10px;
         left: auto; }
+  @media (max-width: 900px) {
+    .contact {
+      margin: 30px -15px;
+      padding: 30px 10px; }
+      .contact .content .container {
+        flex-direction: column; }
+        .contact .content .container .form, .contact .content .container .map {
+          width: 100%; }
+        .contact .content .container .form {
+          padding: 20px; }
+        .contact .content .container .map iframe {
+          height: 350px; } }
 
 .customers .content {
   display: flex;
@@ -312,6 +348,18 @@ div .buttons {
       .customers .list .customer a:hover:after {
         content: ""; }
 
+@media (max-width: 900px) {
+  .customers .content {
+    flex-direction: column; }
+    .customers .content .description, .customers .content .list {
+      width: 100%; }
+  .customers .list {
+    flex-direction: column; }
+    .customers .list .customer {
+      flex: initial; }
+      .customers .list .customer a {
+        flex-direction: column; } }
+
 .description {
   margin: 115px 0; }
   .description .content {
@@ -341,6 +389,16 @@ div .buttons {
         font-size: 20px; }
       .description .skills .skill:nth-child(1n + 1) {
         margin-bottom: 50px; }
+  @media (max-width: 900px) {
+    .description .content, .description .skills, .description .skill {
+      flex-direction: column;
+      width: 100%;
+      flex: initial; }
+    .description .welcome {
+      width: 100%; }
+    .description .skill {
+      margin-top: 50px;
+      margin-bottom: 0 !important; } }
 
 .footer {
   position: relative; }
@@ -363,6 +421,16 @@ div .buttons {
     align-items: center;
     color: #fff;
     background: #d2d2d2; }
+  @media (max-width: 900px) {
+    .footer .btn-top {
+      display: none; }
+    .footer .container {
+      height: 40px;
+      justify-content: center;
+      flex-direction: column;
+      padding-bottom: 15px; }
+      .footer .container .social {
+        margin-top: 5px; } }
 
 .slide {
   display: flex;
@@ -385,25 +453,25 @@ div .buttons {
     z-index: 2; }
 
 .slide[data-slide="slide-6"] {
-  background-color: rgba(47, 18, 41, 0.25); }
+  background-color: rgba(141, 95, 45, 0.25); }
 
 .slide[data-slide="slide-5"] {
-  background-color: rgba(157, 89, 105, 0.25); }
+  background-color: rgba(55, 20, 119, 0.25); }
 
 .slide[data-slide="slide-4"] {
-  background-color: rgba(138, 126, 153, 0.25); }
+  background-color: rgba(90, 150, 132, 0.25); }
 
 .slide[data-slide="slide-3"] {
-  background-color: rgba(211, 153, 185, 0.25); }
+  background-color: rgba(150, 64, 84, 0.25); }
 
 .slide[data-slide="slide-2"] {
-  background-color: rgba(152, 60, 120, 0.25); }
+  background-color: rgba(128, 169, 87, 0.25); }
 
 .slide[data-slide="slide-1"] {
-  background-color: rgba(54, 1, 66, 0.25); }
+  background-color: rgba(162, 35, 176, 0.25); }
 
 .slide[data-slide="slide-0"] {
-  background-color: rgba(167, 186, 92, 0.25); }
+  background-color: rgba(192, 109, 184, 0.25); }
 
 .slide-image {
   flex: 0 1 50%; }
@@ -424,6 +492,9 @@ div .buttons {
   right: 20px;
   z-index: 5;
   background: #fff; }
+  .header .btn-mobile {
+    display: none;
+    cursor: pointer; }
   .header .container {
     display: flex;
     justify-content: space-between;
@@ -444,6 +515,37 @@ div .buttons {
         .header .container nav ul a:hover, .header .container nav ul a.active {
           color: #d2b356;
           border-color: #d2b356; }
+  @media (max-width: 900px) {
+    .header {
+      border-top: none;
+      left: 0;
+      right: 0;
+      padding-left: 15px;
+      padding-right: 15px; }
+      .header .btn-mobile {
+        display: block; }
+      .header .container .logo {
+        font-size: 18px; }
+      .header .container nav, .header .container .social {
+        display: none; }
+      .header .container nav.active {
+        display: block;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 0 15px 15px 15px; }
+        .header .container nav.active ul {
+          flex-direction: column; }
+          .header .container nav.active ul li {
+            border-top: 1px solid #c5c5c5; }
+            .header .container nav.active ul li a {
+              line-height: 15px;
+              display: flex;
+              align-items: center;
+              padding: 12px 0;
+              border: none; } }
 
 .portfolio {
   margin-bottom: 175px; }
@@ -519,6 +621,21 @@ div .buttons {
         right: 40px; }
     .portfolio .lightbox.active {
       display: flex; }
+  @media (max-width: 900px) {
+    .portfolio {
+      margin-bottom: 50px; }
+      .portfolio .content, .portfolio .job a {
+        flex-direction: column; }
+      .portfolio .lightbox .content img {
+        width: 89%;
+        margin: 0 auto;
+        display: block; }
+      .portfolio .lightbox .content .arrow {
+        font-size: 30px; }
+        .portfolio .lightbox .content .arrow.fa-angle-left {
+          left: 30px; }
+        .portfolio .lightbox .content .arrow.fa-angle-right {
+          right: 30px; } }
 
 .reviews {
   margin: 120px 0 190px 0; }
@@ -548,6 +665,15 @@ div .buttons {
         margin-top: 15px; }
         .reviews .list .review blockquote footer cite {
           font-size: 14px; }
+  @media (max-width: 900px) {
+    .reviews {
+      margin: 60px 0; }
+      .reviews .list {
+        flex-direction: column; }
+        .reviews .list .review {
+          flex: initial; }
+          .reviews .list .review + .review {
+            margin-top: 30px; } }
 
 .services {
   margin-bottom: 90px; }
@@ -607,6 +733,22 @@ div .buttons {
         display: block;
         background: #111;
         margin-right: 10px; }
+  @media (max-width: 900px) {
+    .services .content {
+      flex-direction: column; }
+      .services .content aside, .services .content article, .services .content article .post {
+        width: 100%; }
+      .services .content article {
+        margin-top: 50px;
+        padding-bottom: 600px;
+        background-position: 50% bottom;
+        background-size: 100%; }
+        .services .content article .post {
+          margin: 0;
+          width: 100%; }
+      .services .content aside blockquote p {
+        font-size: 18px;
+        line-height: 22px; } }
 
 .social a {
   color: #999; }
@@ -615,4 +757,4 @@ div .buttons {
   .social a + a {
     margin-left: 15px; }
 
-/*# sourceMappingURL=sourcemaps/app-62d696e88f.css.map */
+/*# sourceMappingURL=sourcemaps/app-6f2ea73809.css.map */

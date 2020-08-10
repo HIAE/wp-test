@@ -62,4 +62,30 @@
 		}
 	}
 	margin-bottom: 90px;
+	@media(max-width: $break-md){
+		.content{
+			flex-direction: column;
+			aside, article, article .post{
+				width: 100%;
+			}
+			article{
+				margin-top:50px;
+				padding-bottom: 600px;
+				background-position: 50% bottom;
+				background-size: 100%;
+				.post{
+					margin:0;
+					width: 100%;
+				}
+			}
+			aside{
+				blockquote{
+					p{
+						font-size: 18px;
+						line-height: 22px;
+					}
+				}
+			}
+		}
+	}
 }

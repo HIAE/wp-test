@@ -7,6 +7,10 @@
 	right:20px;
 	z-index:5;
 	background: #fff;
+	.btn-mobile{
+		display:none;
+		cursor: pointer;
+	}
 	.container{
 		display: flex;
 		justify-content: space-between;
@@ -29,6 +33,46 @@
 					&:hover, &.active{
 						color:$color2;
 						border-color:$color2;
+					}
+				}
+			}
+		}
+	}
+	@media(max-width: $break-md){
+		border-top:none;
+		left:0;
+		right:0;
+		padding-left:15px;
+		padding-right: 15px;
+		.btn-mobile{
+			display:block;
+		}
+		.container{
+			.logo{
+				font-size: 18px;
+			}
+			nav, .social{
+				display: none;
+			}
+			nav.active{
+				display: block;
+				position: absolute;
+				top:65px;
+				left:0;
+				right:0;
+				background:#fff;
+				padding: 0 15px 15px 15px;
+				ul{
+					flex-direction: column;
+					li{
+						border-top:1px solid #c5c5c5;
+						a{
+							line-height: 15px;
+							display: flex;
+							align-items: center;
+							padding: 12px 0;
+							border:none;
+						}
 					}
 				}
 			}

@@ -10268,6 +10268,19 @@ var app = {};
 
 	$(document).ready(function() {
 
+		$('.btn-mobile').on('click', function() {
+			$(".header nav").toggleClass('active');
+		});
+
+	});
+
+
+})(window, jQuery);
+(function() {
+	'use strict';
+
+	$(document).ready(function() {
+
 		$('.menu a').on('click', function(event) {
 			$(this).parent().parent().find("a").removeClass('active');
 			$(this).addClass('active');
