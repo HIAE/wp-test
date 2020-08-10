@@ -13,7 +13,7 @@
 				
 				<div class="form">
 					
-					<form action="">
+					<form>
 						<p>
 							<label for="name">Nome:</label>
 							<input type="text" id="name" placeholder="Digite seu nome">
@@ -31,7 +31,7 @@
 							<textarea id="message" placeholder="Digite sua mensagem"></textarea>
 						</p>
 						<p>
-							<button class="buttons">Enviar mensagem</button>
+							<button type="submit" class="buttons btnSend">Enviar mensagem</button>
 						</p>
 					</form>
 
