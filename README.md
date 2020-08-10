@@ -10,23 +10,20 @@ Para instalar o projeto siga os passos abaixo:
 
         git clone https://github.com/edersilva/wp-test
 
-2.  Entre no diretório do projeto clonado e copie/cole o comando abaixo:
 
-        cp .env.example .env
-
-3.  Use o comando abaixo e aguarde a instalação automática.
+2.  Use o comando abaixo e aguarde a instalação automática.
 
         docker-compose up -d
 
-4.  Entre no diretorio do tema executando:
+3.  Entre no diretorio do tema executando:
 
         cd wordpress/wp-content/themes/edersilva
 
-5.  Execute o comando:
+4.  Execute o comando:
 
         npm i
 
-6.  Em seguida, entre com a url abaixo no seu browser:
+5.  Em seguida, entre com a url abaixo no seu browser:
 
         http://localhost
 
