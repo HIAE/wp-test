@@ -1,0 +1,56 @@
+.reviews{
+	margin:120px 0 190px 0;
+	.section-title{
+		text-align: center;
+		.title{
+			&:after{
+				margin-left:auto;
+				margin-right:auto;
+			}
+		}
+		margin-bottom: 65px;
+	}
+	.list{
+		display: flex;
+		justify-content: space-between;
+		.review{
+			flex:0 1 30%;
+			text-align: center;
+			img{
+				width: 115px;
+				height: auto;
+				border-radius:200px;
+				margin-bottom: 25px;
+			}
+			blockquote{
+				p{
+					font-size: 16px;
+					&.line{
+						&:after{
+							margin-left:auto;
+							margin-right:auto;
+						}
+					}
+				}
+				footer{
+					margin-top: 15px;
+					cite{
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+	@media(max-width: $break-md){
+		margin:60px 0;
+		.list{
+			flex-direction: column;
+			.review{
+				flex:initial;
+				& + .review{
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+}

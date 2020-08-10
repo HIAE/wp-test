@@ -1,59 +1,58 @@
-## hiae-wp-test
-Seja muito bem vindo.  
+# HIAE - Desenvolvedor WordPress
 
-Esse teste foi desenvolvido especialmente para vc. E sabemos que vc tem as skills necessárias para finalizá-lo.  
-Ok... se ainda estiver perdido, dá uma olhada na descrição da vaga:
+Projeto criado para o processo seletivo do [Hospital Israelita Albert Einstein](https://www.einstein.br/Pages/Home.aspx)
 
-[[Remoto] Wordpress Developer @ Hospital Israelita Albert Einstein][https://www.linkedin.com/jobs/cap/view/1951178347/?pathWildcard=1951178347&trk=mcm]
+## Instalação
 
-[https://www.linkedin.com/jobs/cap/view/1951178347/?pathWildcard=1951178347&trk=mcm]: https://www.linkedin.com/jobs/cap/view/1951178347/?pathWildcard=1951178347&trk=mcm
+Para instalar o projeto siga os passos abaixo:
 
-Cerimônias a parte, vamos ao que interessa.  
-Seu objetivo é o desenvolvimento de uma Landing Page para apresentação do seu trabalho. Bem simples, nada de burocracias!
+1.  Clone o projeto
 
-#### Desafio 1
-- Desenvolver o tema utilizando as specs disponíveis [aqui][https://github.com/HIAE/wp-test/tree/master/specs];
-
-#### Desafio 2
-- Crie um formulário de contato ao final da page - clichê, mas bem objetivo;
-
-#### Desafio 3
-- Desenvolver 2 Options Page para:
-  - gerenciar o banner no Header inclusive os textos;
-  - gerenciar as redes sociais no topo e no footer;
-- Desenvolver 1 CPT para:
-  - gerenciar a seção de "Meus trabalhos" definida no spec;
-
-Ufa... agora, respira e não pira!
-
-#### Desafios Extras - se vc quiser fazer um pouquinho mais
-- Utilizar toda a estrutura de docker disponível nesse repo;
-- Utilize sass ou less para cuidar do seus estilos;
-- Utilize algum pré compilador - caso vc seja amante do Vanilla;
-- Troque os Lorem Ipsum por textos reais. Utilize descrições simples e objetivas;
-
-#### Diferenciais - se vc quiser SUPERAR as expectativas
-- Desenvolva as animações do tema conforme esse [vídeo][https://drive.google.com/file/d/1TpftdAdBVv7-z4wVEGMTc9dt2mE1b8sk/view?usp=sharing];
-- Responsividade. Bora? Veja essas [specs][https://github.com/HIAE/wp-test/tree/master/specs/mobile] e esse [vídeo][https://drive.google.com/file/d/18MaumaSvPHQqlVjfm9YXwMPpxbMvcU2J/view?usp=sharing];
-- Queremos acompanhar a evolução do seu desenvolvimento. Se possível, deixe o histórico de commits.
-
-#### Desenvolvendo
-- Navegue até a pasta que vc clonou esse repo e execute: `cp .env.example .env`;
-- Edite o arquivo `.env` conforme suas necessidades (vc pode deixar default, se preferir);
-- Agora, execute `make autoinstall` e aguarde...
-- Algumas informações serão postadas na tela. Sente-se e tome um café pois o WP e seus plugins estão sendo instalados;
-- Se tudo ocorrer bem, vc já pode navegar no projeto em `http://localhost`;
-
-> Vc deve saber que, seus dados de acesso ao admin, se encontram no `.env`
+        git clone https://github.com/edersilva/wp-test && cd wp-test
 
 
-Agora sim. Finalizamos por aqui.  
-Faça um fork desse projeto, e ao final, submit a PR and good luck! :D    
-Quando tiver dúvidas, ou encontrar algum problema, abra uma issue. Estaremos de olho.  
+2.  Com o projeto clonado, execute o comando abaixo na raíz do repositório e aguarde a instalação automática.
 
-Beijos e queijos <3
+        docker-compose up -d
 
-[https://github.com/HIAE/wp-test/tree/master/specs]: https://github.com/HIAE/wp-test/tree/master/specs
-[https://drive.google.com/file/d/1TpftdAdBVv7-z4wVEGMTc9dt2mE1b8sk/view?usp=sharing]: https://drive.google.com/file/d/1TpftdAdBVv7-z4wVEGMTc9dt2mE1b8sk/view?usp=sharing
-[https://drive.google.com/file/d/18MaumaSvPHQqlVjfm9YXwMPpxbMvcU2J/view?usp=sharing]: https://drive.google.com/file/d/18MaumaSvPHQqlVjfm9YXwMPpxbMvcU2J/view?usp=sharing
-[https://github.com/HIAE/wp-test/tree/master/specs/mobile]: https://github.com/HIAE/wp-test/tree/master/specs/mobile
+3.  Entre no diretorio do tema executando:
+
+        cd wordpress/wp-content/themes/edersilva
+
+4.  Execute o comando:
+
+        npm i
+
+5.  Em seguida, entre com a url abaixo no seu browser:
+
+        http://localhost
+
+
+## Habilitando o tema e plugins
+
+Siga os passos abaixo para habilitar as configurações no sistema administrativo:
+
+1.  Vá até o menu Aparência > Temas e habilite o tema "edersilva"
+
+
+2.  Em seguida, vá no menu Plugins, e habilite os plugins: "Portfólio", "Página Sobre" e "Redes Sociais"
+
+3.  Para finalizar, basta inserir as informações dinâmicas nas três novas áreas no admin.
+
+3.  E záz! Está pronto! :D
+
+
+## Para automação de tarefas do tema
+
+Para automação de tarefas do JS e CSS como minificar, otimizar e compilar arquivos, entre no diretório do tema e execute:
+
+
+        gulp
+
+## Sobre o autor
+Meu nome é Eder Silva, designer web formado e desenvolvedor. Tenho mais de 15 anos de experiência com desenvolvimento web.
+  
+Meu portfolio completo pode ser acessado aqui [https://edersilva.com/portfolio/site-em-wordpress/](https://edersilva.com/portfolio/site-em-wordpress/)
+
+## Licença
+[MIT](https://choosealicense.com/licenses/mit/)

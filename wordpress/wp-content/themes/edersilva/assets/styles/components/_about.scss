@@ -1,0 +1,37 @@
+.about{
+	padding:145px 0 235px 0;
+	//background: url("../images/banner.jpg") no-repeat 110% bottom;
+	background-repeat: no-repeat !important;
+	background-position: 110% bottom !important;
+	background-size: 50% !important;
+	.content{
+		width: 425px
+	}
+	h1{
+		text-transform: uppercase;
+		font-weight: 800;
+		font-size: 60px;
+	}
+	h2{
+		margin:45px 0 100px 0;
+		line-height: 24px;
+	}
+
+	@media(max-width: $break-md){
+		padding:20px 0 100px 0;
+		background-position: 25% bottom !important;
+		background-size: 150% !important;
+		margin:0 -15px 0 0;
+		h1{
+			font-size: 45px;
+		}
+		h2{
+			margin: 25px 0 50px 0;
+			font-size: 16px;
+		}
+		.content{
+			width: 100%;
+		}
+	}
+
+}

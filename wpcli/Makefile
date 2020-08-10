@@ -12,7 +12,7 @@ configure:
 
 	wp option update siteurl ${WORDPRESS_WEBSITE_URL}
 	wp rewrite structure $(WORDPRESS_WEBSITE_POST_URL_STRUCTURE)
-	wp theme activate your-theme
+	wp theme activate edersilva
 	wp plugin install \
         akismet \
         --activate
