@@ -16,18 +16,20 @@
 					<div class="entry">
 
 						<p class="featured">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+							Além de designer, trabalho com desenvolvimento Front-End e desenvolvedor WordPress. Contanto sempre com estas expertises, utilizo elas para combinar design gráfico e programação, agilizando o desenvolvimento web de blogs, sites ou lojas virtuais com usabilidade e acessibilidade.
 						</p>
 
 						<p>
-							It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							<strong>Desenvolvimento WordPress</strong><br />
+							Com WordPress é possível criar desde pequenos blogs e sites, mas também grandes projetos online, pois sua flexibilidade para implementação e inserção de novas funcionalidades é simples e rápida.
 						</p>
 
 						<p>
-							It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							<strong>Desenvolvimento de lojas virtuais</strong> <br />
+							Com o WooCommerce você terá uma loja virtual eficaz, leve e simples, permitindo ao lojista vender diversos tipos de produtos, seja físico ou virtual, integrado a diversos meios de pagamento e de entrega.
 						</p>
 
-						<a class="buttons" href="#" title="Entrar em contato">Entrar em contato</a>
+						<a class="buttons" href="#contato" title="Entrar em contato">Entrar em contato</a>
 
 					</div>
 
@@ -37,8 +39,8 @@
 
 			<aside>
 				<blockquote>
-					<p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy."</p>
-					<footer>Tony Stark, Stark industries</footer>
+					<p>"Seu trabalho atingiu as nossas expectativas pois alem do design entregue também nos ajudou a organizar processos específicos na programação do projeto."</p>
+					<footer>João Paulo, Lojas Americanas</footer>
 				</blockquote>
 			</aside>
 

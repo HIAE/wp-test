@@ -322,6 +322,7 @@ div .buttons {
       align-items: center;
       flex-direction: column;
       position: relative;
+      text-align: center;
       width: 100%;
       padding: 65px 0; }
       .customers .list .customer a:after {
@@ -453,25 +454,25 @@ div .buttons {
     z-index: 2; }
 
 .slide[data-slide="slide-6"] {
-  background-color: rgba(141, 95, 45, 0.25); }
+  background-color: rgba(237, 115, 0, 0.25); }
 
 .slide[data-slide="slide-5"] {
-  background-color: rgba(55, 20, 119, 0.25); }
+  background-color: rgba(42, 158, 79, 0.25); }
 
 .slide[data-slide="slide-4"] {
-  background-color: rgba(90, 150, 132, 0.25); }
+  background-color: rgba(22, 236, 191, 0.25); }
 
 .slide[data-slide="slide-3"] {
-  background-color: rgba(150, 64, 84, 0.25); }
+  background-color: rgba(5, 107, 16, 0.25); }
 
 .slide[data-slide="slide-2"] {
-  background-color: rgba(128, 169, 87, 0.25); }
+  background-color: rgba(158, 193, 107, 0.25); }
 
 .slide[data-slide="slide-1"] {
-  background-color: rgba(162, 35, 176, 0.25); }
+  background-color: rgba(213, 34, 155, 0.25); }
 
 .slide[data-slide="slide-0"] {
-  background-color: rgba(192, 109, 184, 0.25); }
+  background-color: rgba(57, 21, 233, 0.25); }
 
 .slide-image {
   flex: 0 1 50%; }
@@ -757,4 +758,4 @@ div .buttons {
   .social a + a {
     margin-left: 15px; }
 
-/*# sourceMappingURL=sourcemaps/app-6f2ea73809.css.map */
+/*# sourceMappingURL=sourcemaps/app-cbeba6d63d.css.map */

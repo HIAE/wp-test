@@ -5,8 +5,6 @@
 		<?php get_template_part( "templates/social", "social" ); ?>
 	</div>
 
-	<a href="#header" class="btn-top"></a>
-
 </footer>
 
 

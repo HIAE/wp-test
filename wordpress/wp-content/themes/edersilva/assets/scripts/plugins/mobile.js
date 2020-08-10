@@ -3,7 +3,8 @@
 
 	$(document).ready(function() {
 
-		$('.btn-mobile').on('click', function() {
+		$('.btn-mobile, .menu a').on('click', function(e) {
+			e.preventDefault();
 			$(".header nav").toggleClass('active');
 		});
 

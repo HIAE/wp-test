@@ -10290,7 +10290,8 @@ document.addEventListener('submit', e => {
 
 	$(document).ready(function() {
 
-		$('.btn-mobile').on('click', function() {
+		$('.btn-mobile, .menu a').on('click', function(e) {
+			e.preventDefault();
 			$(".header nav").toggleClass('active');
 		});
 
@@ -10315,7 +10316,7 @@ document.addEventListener('submit', e => {
 			}
 		});
 
-		$('.btn-top').on('click', function(event) {
+		$('.buttons, .btn-top').on('click', function(event) {
 			var target = $(this.getAttribute('href'));
 			if( target.length ) {
 				event.preventDefault();

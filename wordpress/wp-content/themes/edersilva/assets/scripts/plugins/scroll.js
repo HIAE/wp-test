@@ -15,7 +15,7 @@
 			}
 		});
 
-		$('.btn-top').on('click', function(event) {
+		$('.buttons, .btn-top').on('click', function(event) {
 			var target = $(this.getAttribute('href'));
 			if( target.length ) {
 				event.preventDefault();
