@@ -8,10 +8,10 @@ Para instalar o projeto siga os passos abaixo:
 
 1.  Clone o projeto
 
-        git clone https://github.com/edersilva/wp-test
+        git clone https://github.com/edersilva/wp-test && cd wp-test
 
 
-2.  Use o comando abaixo e aguarde a instalação automática.
+2.  Com o projeto clonado, execute o comando abaixo na raíz do repositório e aguarde a instalação automática.
 
         docker-compose up -d
 
