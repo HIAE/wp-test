@@ -119,7 +119,7 @@ get_header(); ?>
                     endforeach;
                     ?>
                 </ul>
-                <a href="#contato" title="Entre em Contato" class="btn btn-outline-dark">Entre em Contato</a>
+                <a href="#contact" title="Entre em Contato" class="btn btn-outline-dark">Entre em Contato</a>
             </div><!-- .col-md-4 -->
             <div class="col-md-4">
                 <img src="<?= _WPSS_THEME_DIR_URI; ?>/images/services.jpg" alt="Serviços">
